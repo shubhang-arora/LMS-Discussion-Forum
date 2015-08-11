@@ -1,0 +1,18 @@
+<?php $__env->startSection('content'); ?>
+
+    <h1>Tags</h1>
+
+    <hr/>
+    <?php if ( ! ($tags->isEmpty())): ?>
+        <ul>
+            <tag>
+                <?php foreach($tags as $tag): ?>
+                 <li><?php echo e($tag->name); ?></li>
+                    <br>
+                <?php endforeach; ?>
+            </tag>
+        </ul>
+    <?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

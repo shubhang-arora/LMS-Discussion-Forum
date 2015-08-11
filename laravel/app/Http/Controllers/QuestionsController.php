@@ -2,13 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Courses;
 use Illuminate\Http\Request;
-
+use App\Tags;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Auth;
+use App\Http\Requests\QuestionRequest;
 
 class QuestionsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,6 +25,7 @@ class QuestionsController extends Controller
     public function index()
     {
         //
+        return Auth::user()->email;
     }
 
     /**
@@ -24,7 +33,8 @@ class QuestionsController extends Controller
      *
      * @return Response
      */
-    public function ask(){
+    public function ask()
+    {
 
     }
 
@@ -34,9 +44,10 @@ class QuestionsController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(QuestionRequest $request)
     {
         //
+        
     }
 
     /**

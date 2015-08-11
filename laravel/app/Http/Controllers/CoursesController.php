@@ -2,13 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Courses;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CourseRequest;
 
 class CoursesController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('isAdmin');
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -17,6 +28,8 @@ class CoursesController extends Controller
     public function index()
     {
         //
+        $courses = Courses::all();
+        return view('Course.index',compact('courses'));
     }
 
     /**
@@ -27,6 +40,7 @@ class CoursesController extends Controller
     public function create()
     {
         //
+        return view('Course.create');
     }
 
     /**
@@ -35,9 +49,11 @@ class CoursesController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CourseRequest $request)
     {
         //
+        Courses::create($request->all());
+        return redirect(action('CoursesController@index'));
     }
 
     /**
@@ -60,6 +76,8 @@ class CoursesController extends Controller
     public function edit($id)
     {
         //
+        $courses = Courses::findorfail($id);
+        return view('course.edit',compact('courses'));
     }
 
     /**
@@ -69,9 +87,14 @@ class CoursesController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(CourseRequest $request, $id)
     {
         //
+        $courses = Courses::findorfail($id);
+        $courses->update($request->all());
+
+        return redirect(action('CoursesController@index'));
+
     }
 
     /**

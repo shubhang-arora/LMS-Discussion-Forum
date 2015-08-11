@@ -19,6 +19,8 @@ Route::get('questions/ask', 'QuestionsController@ask');
 Route::resource('questions','QuestionsController',
     ['except' => ['create', 'index']]);
 
+Route::resource('tags','TagsController');
+
 // Answer routes...
 Route::resource('questions.answers','QuestionsAnswersController',
     ['except' => 'show']);
