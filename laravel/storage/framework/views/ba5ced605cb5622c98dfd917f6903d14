@@ -18,7 +18,7 @@
                             <?php endif; ?>
                                     <!-- resources/views/auth/login.blade.php -->
 
-                            <form method="POST" action="http://localhost:7777/series/firstfile/LMS-DISCUSSION-FORUM/laravel/public/auth/login">
+                            <form method="POST" action="login">
                                 <?php echo csrf_field(); ?>
 
 

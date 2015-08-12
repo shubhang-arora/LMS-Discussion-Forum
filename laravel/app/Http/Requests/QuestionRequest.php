@@ -28,7 +28,7 @@ class QuestionRequest extends Request
             'description'       =>      'required',
             'question'          =>      'required',
             'tag_list'          =>      'required',
-            'course_list'       =>      'required'
+            'course_id'       =>      'required'
         ];
     }
 }

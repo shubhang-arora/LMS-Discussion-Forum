@@ -35,7 +35,9 @@ class QuestionsController extends Controller
      */
     public function ask()
     {
-
+        $courses = Courses::lists('course_name','id');
+        $tags = Tags::lists('name','id');
+        return view('Question.ask',compact(['tags','courses']));
     }
 
     /**
@@ -47,7 +49,7 @@ class QuestionsController extends Controller
     public function store(QuestionRequest $request)
     {
         //
-        
+        dd($request->all());
     }
 
     /**
