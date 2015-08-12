@@ -36,7 +36,7 @@ class QuestionsController extends Controller
     public function ask()
     {
         $courses = Courses::lists('course_name','id');
-        $tags = Tags::lists('name','id');
+        $tags = Tags::lists('name','name')->toArray();
         return view('Question.ask',compact(['tags','courses']));
     }
 
@@ -48,8 +48,11 @@ class QuestionsController extends Controller
      */
     public function store(QuestionRequest $request)
     {
-        //
-        dd($request->all());
+        $this->askQuestion($request);
+
+       // flash()->success('You have asked a question !!','Nice');
+
+        return redirect('/');
     }
 
     /**
@@ -95,5 +98,10 @@ class QuestionsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function askQuestion(QuestionRequest $request)
+    {
+
     }
 }
