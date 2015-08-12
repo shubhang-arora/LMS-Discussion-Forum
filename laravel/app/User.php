@@ -39,13 +39,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public function questions(){
         return $this->hasMany('App\Questions');
     }
-    public function answercomments(){
-        return $this->hasMany('App\AnswerComments');
-    }
-    public function questioncomments(){
-        return $this->hasMany('App\QuestionComments');
-    }
     public function courses(){
-
+        return $this->belongsToMany('App\Courses');
     }
 }
