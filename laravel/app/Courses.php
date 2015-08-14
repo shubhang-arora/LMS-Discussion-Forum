@@ -12,4 +12,25 @@ class Courses extends Model
         'course_name'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function users(){
+        return $this->belongsToMany('App\User');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function questions(){
+        return $this->hasMany('App\Questions');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function tags(){
+        return $this->hasMany('App\Tags');
+    }
+
 }
