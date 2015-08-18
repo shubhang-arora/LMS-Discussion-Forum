@@ -27,7 +27,6 @@ class CoursesController extends Controller
      */
     public function index()
     {
-        //
         $courses = Courses::all();
         return view('Course.index',compact('courses'));
     }
@@ -39,7 +38,6 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        //
         return view('Course.create');
     }
 
@@ -64,7 +62,7 @@ class CoursesController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -75,7 +73,6 @@ class CoursesController extends Controller
      */
     public function edit($id)
     {
-        //
         $courses = Courses::findorfail($id);
         return view('course.edit',compact('courses'));
     }

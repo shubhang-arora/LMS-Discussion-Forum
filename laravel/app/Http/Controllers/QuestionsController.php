@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Courses;
+use App\Questions;
 use Illuminate\Http\Request;
 use App\Tags;
 use App\Http\Requests;
@@ -24,7 +25,7 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        //
+
         return Auth::user()->email;
     }
 
@@ -37,7 +38,7 @@ class QuestionsController extends Controller
     {
         $courses = Courses::lists('course_name','id');
         $tags = Tags::lists('name','name')->toArray();
-        return view('Question.ask',compact(['tags','courses']));
+        return view('Question.ask',compact(['courses','tags']));
     }
 
     /**
@@ -48,6 +49,7 @@ class QuestionsController extends Controller
      */
     public function store(QuestionRequest $request)
     {
+
         $this->askQuestion($request);
 
        // flash()->success('You have asked a question !!','Nice');
@@ -100,8 +102,23 @@ class QuestionsController extends Controller
         //
     }
 
+    private function syncTags(Questions $questions , array $tags)
+    {
+        dd($tags);
+        $questions->tags()->detach();
+        foreach ( $tags as $tag ) {
+            $newTags=Tags::firstOrCreate(['name' => $tag]);
+            $questions->tags()->attach($newTags);
+        }
+    }
+
     private function askQuestion(QuestionRequest $request)
     {
+        //dd($request->all());
+        $questions=Auth::user()->questions()->create($request->all());
+        dd($questions);
+        $this->syncTags($questions, $request->input('tag_list'));
 
+        dd($questions);
     }
 }

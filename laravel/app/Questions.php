@@ -6,6 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Questions extends Model
 {
+
+    protected $fillable = [
+        'question',
+        'course_id',
+        'tag_list',
+        'description'
+    ];
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
