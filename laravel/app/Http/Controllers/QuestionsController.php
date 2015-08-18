@@ -114,7 +114,7 @@ class QuestionsController extends Controller
 
     private function askQuestion(QuestionRequest $request)
     {
-        //dd($request->all());
+        dd($request->all());
         $questions=Auth::user()->questions()->create($request->all());
         dd($questions);
         $this->syncTags($questions, $request->input('tag_list'));

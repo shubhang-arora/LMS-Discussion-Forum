@@ -6,6 +6,8 @@ use App\Tags;
 use Illuminate\Http\Request;
 use App\Courses;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TagRequest;
 
@@ -52,7 +54,7 @@ class TagsController extends Controller
     public function store(TagRequest $request)
     {
         //
-        Tags::create($request->all());
+        $tags=Auth::user()->tags()->create($request->all());
         return redirect(action('TagsController@index'));
 
     }
@@ -83,17 +85,16 @@ class TagsController extends Controller
         return view('Tags.edit',compact(['tags','courses']));
     }
 
+
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  Request  $request
-     * @param  int  $id
-     * @return Response
+     * @param Tags $tags
+     * @param TagRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(TagRequest $request, $id)
+    public function update(Tags $tags,TagRequest $request)
     {
         //
-        $tags = Tags::findorfail($id);
+
         $tags->update($request->all());
 
         return redirect(action('TagsController@index'));
