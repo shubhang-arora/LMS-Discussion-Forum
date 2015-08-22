@@ -87,7 +87,9 @@ class CoursesController extends Controller
     public function update(CourseRequest $request, $id)
     {
         //
+
         $courses = Courses::findorfail($id);
+
         $courses->update($request->all());
 
         return redirect(action('CoursesController@index'));

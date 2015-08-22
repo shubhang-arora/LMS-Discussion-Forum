@@ -3,7 +3,7 @@
     <h1>Edit Tag</h1>
     <hr/>
 
-    <?php echo Form::model($tags,['method' => 'PATCH', 'action' => ['TagsController@update', $tags->id]]); ?>
+    <?php echo Form::model($tags,['method' => 'PATCH', 'action' => ['TagsController@update', $tags]]); ?>
 
     <?php echo $__env->make('Tags._form',['SubmitButtonText'=>'Edit Tag'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo Form::close(); ?>

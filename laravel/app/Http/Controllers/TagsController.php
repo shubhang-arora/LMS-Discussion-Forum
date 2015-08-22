@@ -87,15 +87,14 @@ class TagsController extends Controller
 
 
     /**
-     * @param Tags $tags
+     * @param $id
      * @param TagRequest $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Tags $tags,TagRequest $request)
+    public function update($id,TagRequest $request)
     {
         //
-
-
+        $tags = Tags::findorfail($id);
         $tags->update($request->all());
 
         return redirect(action('TagsController@index'));
