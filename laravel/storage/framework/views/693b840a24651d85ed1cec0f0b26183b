@@ -7,11 +7,9 @@
     <course>
         <?php foreach($courses as $course): ?>
 
-            <?php echo e($course->course_id); ?>
 
-            <br>
-            <?php echo e($course->course_name); ?>
 
+            <?php echo e($course->course_name); ?>:<b><?php echo e($course->course_id); ?></b>
             <br>
             <br>
             <br>

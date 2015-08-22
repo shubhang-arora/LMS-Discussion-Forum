@@ -76,20 +76,33 @@ class QuestionsController extends Controller
      */
     public function edit($id)
     {
-        //
 
+        $questions      =       Questions::findorfail($id);
+
+        $tags           =       Tags::lists('name','name')->toArray();
+
+        $courses        =       Courses::lists('course_name','id');
+
+        return view('Question.edit',compact(['questions','courses','tags']));
     }
 
+
     /**
-     * Update the specified resource in storage.
-     *
-     * @param  Request  $request
-     * @param  int  $id
-     * @return Response
+     * @param Questions $questions
+     * @param QuestionRequest $request
      */
-    public function update(Request $request, $id)
+    public function update(Questions $questions,QuestionRequest $request)
     {
         //
+
+        $questions->update([
+            'courses_id'    =>      $request->input('courses_id'),
+            'question'      =>      $request->input('question'),
+            'description'   =>      $request->input('description')
+        ]);
+
+        $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
+        return redirect('/');
     }
 
     /**
@@ -105,15 +118,18 @@ class QuestionsController extends Controller
 
     private function syncTags(Questions $questions , array $tags, $courses_id)
     {
-
+        //dd($questions);
         $questions->tags()->detach();
+
         foreach ( $tags as $tag ) {
             $newTags=Tags::firstOrCreate([
-                'name' => $tag,
-                'courses_id' => $courses_id,
-                'user_id' => Auth::user()->id
+                'name'          =>      $tag,
+                'courses_id'    =>      $courses_id,
+                'user_id'       =>      Auth::user()->id
             ]);
+
             $questions->tags()->attach($newTags);
+
         }
     }
 

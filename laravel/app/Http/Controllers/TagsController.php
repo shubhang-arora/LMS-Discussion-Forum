@@ -94,7 +94,7 @@ class TagsController extends Controller
     public function update(Tags $tags,TagRequest $request)
     {
         //
-        dd($request);
+
 
         $tags->update($request->all());
 
