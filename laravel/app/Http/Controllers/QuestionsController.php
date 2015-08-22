@@ -25,8 +25,9 @@ class QuestionsController extends Controller
      */
     public function index()
     {
+        $questions = Questions::all();
+        return view('Question.feed',compact('questions'));
 
-        return Auth::user()->email;
     }
 
     /**
@@ -76,13 +77,13 @@ class QuestionsController extends Controller
     public function edit($id)
     {
 
-        $questions      =       Questions::findorfail($id);
+        $question     =       Questions::findorfail($id);
 
         $tags           =       Tags::lists('name','name')->toArray();
 
         $courses        =       Courses::lists('course_name','id');
 
-        return view('Question.edit',compact(['questions','courses','tags']));
+        return view('Question.edit',compact(['question','courses','tags']));
     }
 
 

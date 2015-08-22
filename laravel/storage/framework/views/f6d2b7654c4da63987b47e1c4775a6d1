@@ -4,7 +4,7 @@
     <hr/>
 
 
-    <?php echo Form::model($questions,['method' => 'PATCH', 'action' => ['QuestionsController@update', $questions->id]]); ?>
+    <?php echo Form::model($question,['method' => 'PATCH', 'action' => ['QuestionsController@update', $question->id]]); ?>
 
     <?php echo $__env->make('Question._form',['SubmitButtonText'=>'Edit Question'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo Form::close(); ?>
