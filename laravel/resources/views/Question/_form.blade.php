@@ -1,6 +1,6 @@
 <div class="form-group">
-    {!! Form::label('course_id','Select Course:')!!}
-    {!! Form::select('course_id',$courses,null,['id'=>'course_id','class'=>'form-control'])!!}
+    {!! Form::label('courses_id','Select Course:')!!}
+    {!! Form::select('courses_id',$courses,null,['id'=>'courses_id','class'=>'form-control'])!!}
 </div>
 
 <div class="form-group">
@@ -22,7 +22,7 @@
 
 @section('footer')
     <script>
-        $('#course_id').select2({
+        $('#courses_id').select2({
             placeholder: "Choose a Course",
             allowClear: true
         });

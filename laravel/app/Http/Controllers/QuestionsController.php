@@ -52,7 +52,7 @@ class QuestionsController extends Controller
 
         $this->askQuestion($request);
 
-       // flash()->success('You have asked a question !!','Nice');
+        //flash()->success('You have asked a question !!','Nice');
 
         return redirect('/');
     }
@@ -77,6 +77,7 @@ class QuestionsController extends Controller
     public function edit($id)
     {
         //
+
     }
 
     /**
@@ -102,23 +103,32 @@ class QuestionsController extends Controller
         //
     }
 
-    private function syncTags(Questions $questions , array $tags)
+    private function syncTags(Questions $questions , array $tags, $courses_id)
     {
-        dd($tags);
+
         $questions->tags()->detach();
         foreach ( $tags as $tag ) {
-            $newTags=Tags::firstOrCreate(['name' => $tag]);
+            $newTags=Tags::firstOrCreate([
+                'name' => $tag,
+                'courses_id' => $courses_id,
+                'user_id' => Auth::user()->id
+            ]);
             $questions->tags()->attach($newTags);
         }
     }
 
     private function askQuestion(QuestionRequest $request)
     {
-        dd($request->all());
-        $questions=Auth::user()->questions()->create($request->all());
-        dd($questions);
-        $this->syncTags($questions, $request->input('tag_list'));
 
-        dd($questions);
+
+        $questions=Auth::user()->questions()->create([
+            'courses_id' => $request->input('courses_id'),
+            'question' => $request->input('question'),
+            'description' => $request->input('description')
+        ]);
+        $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
+
+
+
     }
 }

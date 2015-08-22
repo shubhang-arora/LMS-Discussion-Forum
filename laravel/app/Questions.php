@@ -9,7 +9,7 @@ class Questions extends Model
 
     protected $fillable = [
         'question',
-        'course_id',
+        'courses_id',
         'tag_list',
         'description'
     ];

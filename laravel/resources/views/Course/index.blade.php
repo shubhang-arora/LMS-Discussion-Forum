@@ -9,9 +9,9 @@
     <course>
         @foreach($courses as $course)
 
-            {{$course->course_id}}
-            <br>
-            {{$course->course_name}}
+
+
+            {{$course->course_name}}:<b>{{$course->course_id}}</b>
             <br>
             <br>
             <br>

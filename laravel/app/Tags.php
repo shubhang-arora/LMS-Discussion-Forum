@@ -9,7 +9,8 @@ class Tags extends Model
 
     protected $fillable = [
         'name',
-        'courses_id'
+        'courses_id',
+        'user_id'
     ];
 
     /**
