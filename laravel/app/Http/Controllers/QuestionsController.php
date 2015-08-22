@@ -68,11 +68,10 @@ class QuestionsController extends Controller
         //
     }
 
+
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
+     * @param Questions $questions
+     * @return \Illuminate\View\View
      */
     public function edit($id)
     {
@@ -88,13 +87,14 @@ class QuestionsController extends Controller
 
 
     /**
-     * @param Questions $questions
+     * @param $id
      * @param QuestionRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Questions $questions,QuestionRequest $request)
+    public function update($id,QuestionRequest $request)
     {
-        //
 
+        $questions = Questions::findorfail($id);
         $questions->update([
             'courses_id'    =>      $request->input('courses_id'),
             'question'      =>      $request->input('question'),

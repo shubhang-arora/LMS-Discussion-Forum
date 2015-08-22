@@ -41,4 +41,9 @@ class Questions extends Model
     public function answers(){
         return $this->hasMany('App\Answers');
     }
+
+    public function getTagListAttribute()
+    {
+        return $this->tags()->lists('name')->toArray();
+    }
 }

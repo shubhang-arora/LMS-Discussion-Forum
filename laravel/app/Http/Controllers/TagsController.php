@@ -95,6 +95,7 @@ class TagsController extends Controller
     {
         //
         $tags = Tags::findorfail($id);
+
         $tags->update($request->all());
 
         return redirect(action('TagsController@index'));
