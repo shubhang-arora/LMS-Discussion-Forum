@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Http\Requests\QuestionAnswerRequest;
 use App\Http\Controllers\Controller;
+use App\Questions;
+use Auth;
 
 class QuestionsAnswersController extends Controller
 {
@@ -23,6 +26,7 @@ class QuestionsAnswersController extends Controller
     public function index()
     {
         //
+
     }
 
     /**
@@ -41,9 +45,11 @@ class QuestionsAnswersController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(QuestionAnswerRequest $request)
     {
-        //
+        dd($request);
+        $answer = Auth::user()->answers()->create($request->input('answer'));
+        return redirect(action('QuestionsController@index'));
     }
 
     /**
@@ -89,5 +95,16 @@ class QuestionsAnswersController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function write($id)
+    {
+        $question = Questions::findorfail($id);
+        return view('Answer.write',compact('question'));
     }
 }

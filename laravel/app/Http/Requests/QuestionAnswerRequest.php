@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class QuestionRequest extends Request
+class QuestionAnswerRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,11 +24,7 @@ class QuestionRequest extends Request
     public function rules()
     {
         return [
-            //
-            'description'       =>      'required',
-            'question'          =>      'required',
-            'tag_list'          =>      'required',
-            'courses_id'        =>      'required'
+            'answer'    =>      'required'
         ];
     }
 }

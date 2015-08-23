@@ -1,0 +1,13 @@
+<?php $__env->startSection('content'); ?>
+
+<h1>Write Answer</h1>
+<hr/>
+<h1><?php echo e($question->question); ?></h1>
+<?php echo Form::open(); ?>
+
+<?php echo $__env->make('Answers._form', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo Form::close(); ?>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
