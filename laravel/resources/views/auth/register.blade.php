@@ -47,6 +47,7 @@
                                 <button type="submit" class = "btn btn-primary form-control">Register</button>
                             </div>
                         </form>
+                            <h6><a href="{{action('Auth\AuthController@postLogin')}}">Login</a></h6>
                     </div>
                 </div>
             </div>

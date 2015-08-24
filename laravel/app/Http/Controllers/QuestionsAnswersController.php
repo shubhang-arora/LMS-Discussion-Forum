@@ -47,15 +47,14 @@ class QuestionsAnswersController extends Controller
      */
     public function store(QuestionAnswerRequest $request)
     {
-        dd($request);
-        $answer = Auth::user()->answers()->create($request->input('answer'));
+        $answer = Auth::user()->answers()->create($request->all());
         return redirect(action('QuestionsController@index'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $id;
      * @return Response
      */
     public function show($id)
