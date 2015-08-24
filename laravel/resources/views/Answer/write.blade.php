@@ -5,7 +5,8 @@
 <h1>Write Answer</h1>
 <hr/>
 <h1>{{$question->question}}</h1>
-{!! Form::open(['url' => 'questions/{questions}/answers']) !!}
+
+{!! Form::model($question,['action' => ['QuestionsAnswersController@store',$question->id]]) !!}
 @include('Answer._form',['SubmitButtonText'=>'Submit Answer'])
 {!! Form::close() !!}
 @include('errors.list')

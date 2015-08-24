@@ -18,15 +18,15 @@
 
 <?php endif; ?>
 <hr/>
-
+<hr/>
+<a href=<?php echo e(action('QuestionsController@ask')); ?>>Ask Questions</a>
+<hr/>
 <?php foreach($questions as $question): ?>
-    <question>
-
-     <h2><div class="body"><?php echo e($question->question); ?></div></h2>
-        <h4><div class="body"><?php echo e($question->description); ?></div></h4>
-
-
-    </question>
+    <article>
+        <h2><a href=<?php echo e(action('QuestionsController@show',$question->id)); ?>><?php echo e($question->question); ?></a></h2>
+        <div class="body"><?php echo e($question->description); ?></div>
+        <div class="footer"><?php echo e($question->created_at->diffForHumans()); ?></div>
+    </article>
 <?php endforeach; ?>
 
 <?php $__env->stopSection(); ?>

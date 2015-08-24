@@ -47,8 +47,16 @@ class QuestionsAnswersController extends Controller
      */
     public function store(QuestionAnswerRequest $request)
     {
-        $answer = Auth::user()->answers()->create($request->all());
+        $uri = $request->path();
+        $uriExpanded=explode('/',$uri);
+        $question_id=$uriExpanded[1];
+
+        $answer = Auth::user()->answers()->create([
+            'answer'       =>      $request->input('answer'),
+            'question_id'   =>      $question_id
+        ]);
         return redirect(action('QuestionsController@index'));
+
     }
 
     /**
