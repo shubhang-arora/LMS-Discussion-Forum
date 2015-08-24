@@ -4,15 +4,15 @@
 
 <h1>Questions</h1>
 <hr/>
-
+<hr/>
+<a href={{action('QuestionsController@ask')}}>Ask Questions</a>
+<hr/>
 @foreach($questions as $question)
-    <question>
-
-     <h2><div class="body">{{$question->question}}</div></h2>
-        <h4><div class="body">{{$question->description}}</div></h4>
-
-
-    </question>
+    <article>
+        <h2><a href={{action('QuestionsController@show',$question->id)}}>{{$question->question}}</a></h2>
+        <div class="body">{{$question->description}}</div>
+        <div class="footer">{{$question->created_at->diffForHumans()}}</div>
+    </article>
 @endforeach
 
 @stop

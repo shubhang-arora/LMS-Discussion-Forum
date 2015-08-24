@@ -25,7 +25,7 @@ class QuestionsController extends Controller
      */
     public function index()
     {
-        $questions = Questions::all();
+        $questions = Questions::latest('updated_at')->orderBy('id', 'desc')->get();
         return view('Question.feed',compact('questions'));
 
     }
