@@ -18,6 +18,7 @@ class QuestionsAnswersController extends Controller
     {
         $this->middleware('auth');
         $this->middleware('AnswerBelongsToQuestion',['only' => 'edit', 'update']);
+        $this->middleware('isAnswerable',['only' => 'write', 'store']);
     }
 
     /**

@@ -33,5 +33,6 @@ class Kernel extends HttpKernel
         'isOwnerOfQuestion' => \App\Http\Middleware\isOwnerOfQuestion::class,
         'isOwnerOfAnswer' => \App\Http\Middleware\isOwnerOfAnswer::class,
         'AnswerBelongsToQuestion' => \App\Http\Middleware\AnswerBelongsToQuestion::class,
+        'isAnswerable' => \App\Http\Middleware\isAnswerable::class,
     ];
 }
