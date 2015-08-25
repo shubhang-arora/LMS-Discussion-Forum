@@ -18,7 +18,6 @@ class isOwnerOfQuestion
     public function handle($request, Closure $next)
     {
         $uri = $request->path();
-
         $uriExpanded=explode('/',$uri);
         $id=$uriExpanded[1];
         $userId=Auth::user()->id;

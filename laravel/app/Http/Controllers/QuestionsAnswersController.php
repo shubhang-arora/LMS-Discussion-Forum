@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Answers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -16,6 +17,7 @@ class QuestionsAnswersController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('AnswerBelongsToQuestion',['only' => 'edit']);
     }
 
     /**
@@ -70,15 +72,18 @@ class QuestionsAnswersController extends Controller
         //
     }
 
+
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return Response
+     * @param $qid
+     * @param $aid
      */
-    public function edit($id)
+    public function edit($qid,$aid)
     {
-        //
+
+        $question= Questions::findorfail($qid);
+        $answer = Answers::findorfail($aid);
+        return view('Answer.edit',compact(['question','answer']));
+
     }
 
     /**
@@ -88,9 +93,9 @@ class QuestionsAnswersController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(QuestionAnswerRequest $request, $id)
     {
-        //
+        dd($request->all());
     }
 
     /**

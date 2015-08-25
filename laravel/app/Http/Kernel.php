@@ -32,5 +32,6 @@ class Kernel extends HttpKernel
         'isAdmin' => \App\Http\Middleware\RedirectIfNotAdmin::class,
         'isOwnerOfQuestion' => \App\Http\Middleware\isOwnerOfQuestion::class,
         'isOwnerOfAnswer' => \App\Http\Middleware\isOwnerOfAnswer::class,
+        'AnswerBelongsToQuestion' => \App\Http\Middleware\AnswerBelongsToQuestion::class,
     ];
 }
