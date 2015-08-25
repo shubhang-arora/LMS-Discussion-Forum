@@ -17,7 +17,7 @@ class QuestionsAnswersController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('AnswerBelongsToQuestion',['only' => 'edit']);
+        $this->middleware('AnswerBelongsToQuestion',['only' => 'edit', 'update']);
     }
 
     /**
@@ -93,9 +93,11 @@ class QuestionsAnswersController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(QuestionAnswerRequest $request, $id)
+    public function update(QuestionAnswerRequest $request, $qid,$aid)
     {
-        dd($request->all());
+        $answer = Answers::findorfail($aid);
+        $answer->update($request->all());
+        return redirect(action('QuestionsController@index'));
     }
 
     /**
