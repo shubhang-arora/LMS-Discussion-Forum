@@ -13,6 +13,7 @@ class DeleteAnswerCommentsTable extends Migration
     public function up()
     {
         //
+        Schema::drop('answerComments');
     }
 
     /**
@@ -23,6 +24,6 @@ class DeleteAnswerCommentsTable extends Migration
     public function down()
     {
         //
-        Schema::drop('answerComments');
+
     }
 }
