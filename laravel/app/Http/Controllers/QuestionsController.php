@@ -67,7 +67,9 @@ class QuestionsController extends Controller
      */
     public function show($id)
     {
-        //
+        $question = Questions::findorfail($id);
+        $answers = $question->answers;
+        return view('Question.show',compact('question','answers'));
     }
 
 
@@ -145,8 +147,21 @@ class QuestionsController extends Controller
             'description' => $request->input('description')
         ]);
         $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
-
-
-
     }
+
+    public function TagQuestions($id)
+    {
+        $tag = Tags::findorfail($id);
+        $questions = $tag->questions;
+        return view('Question.tagQuestions',compact('tag','questions'));
+    }
+
+    public function CourseQuestions($id)
+    {
+        $course = Courses::findorfail($id);
+        $questions = $course->questions;
+        return view('Question.courseQuestions',compact('course','questions'));
+    }
+
 }
+

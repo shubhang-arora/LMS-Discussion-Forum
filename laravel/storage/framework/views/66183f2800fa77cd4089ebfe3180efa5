@@ -1,27 +1,13 @@
 <?php $__env->startSection('content'); ?>
 
     <h1>Tags</h1>
-    <?php if(Auth::check()): ?>
-        <p align="right">
-            Welcome <?php echo e(Auth::user()->name); ?>
 
-            <br>
-            <a href=<?php echo e(action('Auth\AuthController@getLogout')); ?>>Logout</a>
-        </p>
-    <?php endif; ?>
-    <?php if ( ! (Auth::check())): ?>
-        <p align="right">
-            <a href=<?php echo e(action('Auth\AuthController@postLogin')); ?>>Login</a>
-            <a href=<?php echo e(action('Auth\AuthController@postRegister')); ?>>Register</a>
-        </p>
-
-    <?php endif; ?>
     <hr/>
     <?php if ( ! ($tags->isEmpty())): ?>
         <ul>
             <tag>
                 <?php foreach($tags as $tag): ?>
-                 <li><?php echo e($tag->name); ?></li>
+                 <li><a href="<?php echo e(action('QuestionsController@TagQuestions',$tag->id)); ?>"><?php echo e($tag->name); ?></a></li>
                     <br>
                 <?php endforeach; ?>
             </tag>

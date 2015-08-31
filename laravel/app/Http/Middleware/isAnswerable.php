@@ -21,7 +21,7 @@ class isAnswerable
         $uri = $request->path();
         $UriExpanded=explode('/',$uri);
         $q_id=$UriExpanded[1];
-        $id = DB::table('answers')->where('question_id','=' ,$q_id)->where('user_id','=',$user_id)->count();
+        $id = DB::table('answers')->where('questions_id','=' ,$q_id)->where('user_id','=',$user_id)->count();
         if($id>=1)
         {
             return redirect(action('QuestionsController@index'));

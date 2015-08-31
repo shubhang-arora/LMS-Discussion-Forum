@@ -22,7 +22,7 @@ class AnswerBelongsToQuestion
         $q_id=$UriExpanded[1];
         $a_id = $UriExpanded[3];
         $answer = Answers::findOrfail($a_id);
-        $id = $answer->question_id;
+        $id = $answer->questions_id;
         if($id!=$q_id)
         {
             return redirect(action('QuestionsController@index'));

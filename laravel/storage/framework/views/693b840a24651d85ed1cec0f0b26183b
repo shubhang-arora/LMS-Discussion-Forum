@@ -1,32 +1,14 @@
 <?php $__env->startSection('content'); ?>
 
     <h1>Courses</h1>
-    <?php if(Auth::check()): ?>
-        <p align="right">
-            Welcome <?php echo e(Auth::user()->name); ?>
 
-            <br>
-            <a href=<?php echo e(action('Auth\AuthController@getLogout')); ?>>Logout</a>
-        </p>
-    <?php endif; ?>
-    <?php if ( ! (Auth::check())): ?>
-        <p align="right">
-            <a href=<?php echo e(action('Auth\AuthController@postLogin')); ?>>Login</a>
-            <a href=<?php echo e(action('Auth\AuthController@postRegister')); ?>>Register</a>
-        </p>
-
-    <?php endif; ?>
     <hr/>
 
     <course>
         <?php foreach($courses as $course): ?>
-
-
-
-            <?php echo e($course->course_name); ?>:<b><?php echo e($course->course_id); ?></b>
+            <a href="<?php echo e(action('QuestionsController@CourseQuestions',$course->id)); ?>"><?php echo e($course->course_name); ?>:<b><?php echo e($course->course_id); ?></b></a>
             <br>
-            <br>
-            <br>
+            <hr>
         <?php endforeach; ?>
     </course>
 <?php $__env->stopSection(); ?>

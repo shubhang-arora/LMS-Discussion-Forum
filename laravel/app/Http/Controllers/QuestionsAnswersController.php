@@ -56,7 +56,7 @@ class QuestionsAnswersController extends Controller
 
         $answer = Auth::user()->answers()->create([
             'answer'       =>      $request->input('answer'),
-            'question_id'   =>      $question_id
+            'questions_id'   =>      $question_id
         ]);
         return redirect(action('QuestionsController@index'));
 
