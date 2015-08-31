@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Auth;
+use DB;
 
 class RedirectIfNotAdmin
 {
@@ -16,7 +17,9 @@ class RedirectIfNotAdmin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user()->email != env('LMS_ADMIN'))
+        $id = Auth::user()->id;
+        $count = DB::table('admin')->where('user_id',$id)->count();
+        if($count!=1)
         {
             return redirect(action('QuestionsController@index'));
         }
