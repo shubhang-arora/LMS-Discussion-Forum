@@ -8,8 +8,7 @@
 
         <article>
             <?php foreach($questions as $question): ?>
-                <?php echo e($question->question); ?>
-
+                <a href="<?php echo e(action('QuestionsController@show',$question->id)); ?>"><?php echo e($question->question); ?></a>
                 <br>
                 <hr>
             <?php endforeach; ?>

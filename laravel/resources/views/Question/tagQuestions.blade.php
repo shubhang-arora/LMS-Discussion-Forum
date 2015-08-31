@@ -10,7 +10,7 @@
 
         <article>
             @foreach($questions as $question)
-                {{$question->question}}
+                <a href="{{action('QuestionsController@show',$question->id)}}">{{$question->question}}</a>
                 <br>
                 <hr>
             @endforeach

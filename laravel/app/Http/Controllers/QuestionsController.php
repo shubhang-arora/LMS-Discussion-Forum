@@ -10,6 +10,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Auth;
 use App\Http\Requests\QuestionRequest;
+use Illuminate\Support\Facades\DB;
 
 class QuestionsController extends Controller
 {
@@ -69,7 +70,17 @@ class QuestionsController extends Controller
     {
         $question = Questions::findorfail($id);
         $answers = $question->answers;
-        return view('Question.show',compact('question','answers'));
+        $user_answer = DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->get();
+        if($user_answer==NULL)
+        {
+            $aid=-1;
+
+        }
+        else
+        {
+            $aid = $user_answer[0]->id;
+        }
+        return view('Question.show',compact('question','answers','aid'));
     }
 
 
