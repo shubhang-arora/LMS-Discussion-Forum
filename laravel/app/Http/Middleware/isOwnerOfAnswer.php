@@ -20,9 +20,10 @@ class isOwnerOfAnswer
 
         $uri = $request->path();
         $uriExpanded=explode('/',$uri);
-        $id=$uriExpanded[1];
+        $id=$uriExpanded[3];
         $userId=Auth::user()->id;
         $answer = DB::table('answers')->where('id','=' ,$id)->first();
+
         if($userId!=$answer->user_id){
             return redirect($uriExpanded[0].'/'.$uriExpanded[1]);
         }

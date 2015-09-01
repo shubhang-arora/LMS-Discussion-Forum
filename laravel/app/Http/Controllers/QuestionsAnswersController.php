@@ -10,6 +10,7 @@ use App\Http\Requests\QuestionAnswerRequest;
 use App\Http\Controllers\Controller;
 use App\Questions;
 use Auth;
+use Illuminate\Support\Facades\DB;
 
 class QuestionsAnswersController extends Controller
 {
@@ -17,8 +18,9 @@ class QuestionsAnswersController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('AnswerBelongsToQuestion',['only' => 'edit', 'update']);
+        $this->middleware('AnswerBelongsToQuestion',['except' => 'store', 'write']);
         $this->middleware('isAnswerable',['only' => 'write', 'store']);
+        $this->middleware('isOwnerOfAnswer',['only' => 'edit', 'update']);
     }
 
     /**
@@ -62,15 +64,29 @@ class QuestionsAnswersController extends Controller
 
     }
 
+
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id;
-     * @return Response
+     * @param $qid
+     * @param $aid
      */
-    public function show($id)
+    public function show($qid,$aid)
     {
-        //
+        $answer = Answers::findorfail($aid);
+        $question = Questions::findorfail($qid);
+        $user_answer = DB::table('answers')->where('user_id',Auth::user()->id)->where('id',$aid)->get();
+    
+        if($user_answer==NULL)
+        {
+            $aid=-1;
+
+        }
+        else
+        {
+            $aid = $user_answer[0]->id;
+        }
+
+        return view('Answer.show',compact(['answer','question','aid']));
+
     }
 
 

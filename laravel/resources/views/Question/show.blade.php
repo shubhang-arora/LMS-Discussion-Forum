@@ -16,7 +16,7 @@
 
             <article>
                     @foreach($answers as $answer)
-                        {{$answer->answer}}
+                    <a href="{{action('QuestionsAnswersController@show',[$question->id,$answer->id])}}">{{$answer->answer}}</a>
                         <br>
                     <hr>
                     @endforeach

@@ -25,10 +25,9 @@ Route::resource('questions','QuestionsController',
 Route::resource('tags','TagsController');
 
 Route::get('questions/{questions}/answers/write','QuestionsAnswersController@write');
-
 // Answer routes...
 Route::resource('questions.answers','QuestionsAnswersController',
-    ['except' => ['show', 'create']]);
+    ['except' => ['create']]);
 
 // Profile routes...
 Route::resource('users','UsersController',
