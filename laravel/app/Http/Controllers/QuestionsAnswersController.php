@@ -18,9 +18,9 @@ class QuestionsAnswersController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('AnswerBelongsToQuestion',['except' => 'store', 'write']);
-        $this->middleware('isAnswerable',['only' => 'write', 'store']);
-        $this->middleware('isOwnerOfAnswer',['only' => 'edit', 'update']);
+        $this->middleware('AnswerBelongsToQuestion',['only' => ['show','edit','update']]);
+        $this->middleware('isAnswerable',['only' => ['write', 'store']]);
+        $this->middleware('isOwnerOfAnswer',['only' => ['edit', 'update']]);
     }
 
     /**
@@ -74,7 +74,7 @@ class QuestionsAnswersController extends Controller
         $answer = Answers::findorfail($aid);
         $question = Questions::findorfail($qid);
         $user_answer = DB::table('answers')->where('user_id',Auth::user()->id)->where('id',$aid)->get();
-    
+
         if($user_answer==NULL)
         {
             $aid=-1;

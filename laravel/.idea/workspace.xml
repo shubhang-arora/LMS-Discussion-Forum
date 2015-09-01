@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc749a3-94ef-447c-b299-843fd2fe35f9" name="Default" comment="Added Admin Table">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/js/comments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/Answer/show.blade.php" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\LMS-Discussion-Forum" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\bootstrap\cache\routes.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\cache\2b\d3\2bd34a3f00a0260d2bef67e8b604fdd8" afterPath="" />
@@ -27,6 +25,7 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\78a32e444f40b96863f675b0708ce91082e4d825" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\845259025c4ffdccc508602f5b941729eaa075d9" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\8bcad1a6a3614a32ecdcee17c2ca638159cd4f6e" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\93c940442d884e1fb7d81da984761e8a6aecba86" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\94c3d2fc64c5b1c60a53dcb4315806a0842cc932" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\985e176fd56cbfc4bd895816a44f9f4e55d3d701" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\99cea42a5383464aa612b9d94b89ecdeb827196e" afterPath="" />
@@ -53,17 +52,8 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f2746710f8e5862ebb3e9ac889b1774bd5dfc66b" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f30e58e3e019b94ec72cada01743a6af77cac32e" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f87a627a3a810c7700575ab05e64e4d218bdb850" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/4dfbbf57cf0b4a4ee4b685ecbfdde34f" afterPath="$PROJECT_DIR$/storage/framework/views/4dfbbf57cf0b4a4ee4b685ecbfdde34f" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/ac4997de71a3516b1dd223ef2b202113" afterPath="$PROJECT_DIR$/storage/framework/views/ac4997de71a3516b1dd223ef2b202113" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/d1987b584957d86e7774c7c03c5acd70" afterPath="$PROJECT_DIR$/storage/framework/views/d1987b584957d86e7774c7c03c5acd70" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Question/feed.blade.php" afterPath="$PROJECT_DIR$/resources/views/Question/feed.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/isOwnerOfAnswer.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/isOwnerOfAnswer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Question/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QuestionsAnswersController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuestionsAnswersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55737704">
-              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
@@ -147,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnswerBelongsToQuestion.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AnswerBelongsToQuestion.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AnswerBelongsToQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.33811477">
               <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding />
             </state>
@@ -249,11 +239,11 @@
         <option value="$PROJECT_DIR$/resources/views/Question/feed.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/AnswerBelongsToQuestion.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/isOwnerOfAnswer.php" />
         <option value="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Answer/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/AnswerBelongsToQuestion.php" />
       </list>
     </option>
   </component>
@@ -1070,14 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AnswerBelongsToQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/isAnswerable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.961538">
@@ -1123,11 +1105,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55737704">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AnswerBelongsToQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33811477">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
