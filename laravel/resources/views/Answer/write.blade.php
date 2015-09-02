@@ -10,5 +10,7 @@
 @include('Answer._form',['SubmitButtonText'=>'Submit Answer'])
 {!! Form::close() !!}
 @include('errors.list')
+@section('footer')
 
+@endsection
 @stop

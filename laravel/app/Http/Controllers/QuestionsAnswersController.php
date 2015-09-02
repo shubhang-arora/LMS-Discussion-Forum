@@ -128,10 +128,10 @@ class QuestionsAnswersController extends Controller
         //
     }
 
+
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
+     * @param $id
+     * @return \Illuminate\View\View
      */
     public function write($id)
     {

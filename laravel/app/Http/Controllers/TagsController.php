@@ -17,8 +17,7 @@ class TagsController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('isAdmin',
-            ['except'   =>      'index']);
+        $this->middleware('isAdmin', ['except'=>'index']);
     }
 
     /**

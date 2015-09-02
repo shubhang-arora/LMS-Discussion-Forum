@@ -5,7 +5,7 @@
 
 <div class="form-group">
     {!! Form::label('question','Question:')!!}
-    {!! Form::text('question',null,['class'=>'form-control'])!!}
+    <div id="summernote"></div>
 </div>
 
 <div class="form-group">
