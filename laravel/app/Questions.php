@@ -3,9 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Lanz\Commentable\Commentable;
 class Questions extends Model
 {
+
+    use Commentable;
 
     protected $fillable = [
         'question',

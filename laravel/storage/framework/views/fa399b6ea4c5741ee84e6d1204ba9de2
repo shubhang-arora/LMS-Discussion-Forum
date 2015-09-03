@@ -1,0 +1,18 @@
+<?php $__env->startSection('content'); ?>
+
+<h1>Write Answer</h1>
+<hr/>
+<h1><?php echo e($question->question); ?></h1>
+
+<?php echo Form::model($question,['action' => ['QuestionsAnswersController@store',$question->id]]); ?>
+
+<?php echo $__env->make('Answer._form',['SubmitButtonText'=>'Submit Answer'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo Form::close(); ?>
+
+<?php echo $__env->make('errors.list', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->startSection('footer'); ?>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

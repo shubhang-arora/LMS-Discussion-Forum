@@ -10,6 +10,17 @@
 @endif
 
 <hr>
+    <a id="comment">Comment</a>
+    <div class="writeComment">
+        {!!    Form::open()    !!}
+        <div class="form-group">
+            {!!    Form::text('comment',null,['class'=>'comment form-control'])   !!}
+        </div>
+        {!!    Form::close()    !!}
+        <div class="form-group">
+            {!!    Form::submit("Post Comment",['class'=>'send-btn'])    !!}
+        </div>
+    </div>
 <hr>
 
         @unless($answers->isEmpty())

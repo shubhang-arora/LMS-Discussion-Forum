@@ -1,0 +1,41 @@
+<?php $__env->startSection('content'); ?>
+<h1><?php echo e($question->question); ?></h1>
+
+<?php if(\Illuminate\Support\Facades\DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->count()==1): ?>
+    <a href="<?php echo e(action('QuestionsAnswersController@edit',[$question->id,$aid])); ?>">Edit Your Answer</a>
+<?php else: ?>
+    <a href="<?php echo e(action('QuestionsAnswersController@write',$question->id)); ?>">Write Answer</a>
+<?php endif; ?>
+
+<hr>
+    <a id="comment">Comment</a>
+    <div class="writeComment">
+        <?php echo Form::open(); ?>
+
+        <div class="form-group">
+            <?php echo Form::text('comment',null,['class'=>'comment form-control']); ?>
+
+        </div>
+        <?php echo Form::close(); ?>
+
+        <div class="form-group">
+            <?php echo Form::submit("Post Comment",['class'=>'send-btn']); ?>
+
+        </div>
+    </div>
+<hr>
+
+        <?php if ( ! ($answers->isEmpty())): ?>
+
+            <article>
+                    <?php foreach($answers as $answer): ?>
+                    <a href="<?php echo e(action('QuestionsAnswersController@show',[$question->id,$answer->id])); ?>"><?php echo e($answer->answer); ?></a>
+                        <br>
+                    <hr>
+                    <?php endforeach; ?>
+
+            </article>
+        <?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,28 @@
+<?php $__env->startSection('content'); ?>
+
+    <h1><?php echo e($question->question); ?></h1>
+    <hr>
+    <hr>
+
+    <h4><?php echo e($answer->answer); ?></h4>
+    <?php if($aid!=-1): ?>
+        <a href="<?php echo e(action('QuestionsAnswersController@edit',[$question->id,$aid])); ?>">Edit</a>
+    <?php endif; ?>
+    <a id="comment">Comment</a>
+    <div class="writeComment">
+        <?php echo Form::open(); ?>
+
+        <div class="form-group">
+            <?php echo Form::text('comment',null,['class'=>'comment form-control']); ?>
+
+        </div>
+        <?php echo Form::close(); ?>
+
+        <div class="form-group">
+            <?php echo Form::submit("Post Comment",['class'=>'send-btn']); ?>
+
+        </div>
+    </div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

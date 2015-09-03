@@ -5,69 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc749a3-94ef-447c-b299-843fd2fe35f9" name="Default" comment="Added Admin Table">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\LMS-Discussion-Forum" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\bootstrap\cache\routes.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\resources\js\comments.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\cache\2b\d3\2bd34a3f00a0260d2bef67e8b604fdd8" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\04be196bb2d840a585d33301fb06c93eeb621c68" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\064c97e74d5fe6da02925455e69aaf3a0e865cf7" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\10ca4b21b1ee6a8f4fb5975118758f6d75d16daf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\13fe771dba2ad58bb78732eb1aa105d332e4f239" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\152f9399f98b46d2c5f16f65ee73f5ea17694b79" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\1d2b327ef194ec6c8789a4e95a924b308410e621" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\239642e8651c096db3d54cc37add0ed13887d1ae" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\3984e19283cdb627cfbe5bd2b9de9fcfc1c9dc3c" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\461f3cf0059dc893145906a588fcd368585b07c9" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\4e68f015445ccf9c5d978842b8cc78648db63031" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\4f61563548d016f83608d672dc27afad310d8f1d" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\5358e2277daaa10e98b5839e12e685bbe5c68fa3" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\5390a797ff609cf5c084c1fff8e7e64b179104bd" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\54b786f9a1e15f2eaab6e99a18abe89c31d329c5" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\78a32e444f40b96863f675b0708ce91082e4d825" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\845259025c4ffdccc508602f5b941729eaa075d9" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\8bcad1a6a3614a32ecdcee17c2ca638159cd4f6e" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\93c940442d884e1fb7d81da984761e8a6aecba86" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\94c3d2fc64c5b1c60a53dcb4315806a0842cc932" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\985e176fd56cbfc4bd895816a44f9f4e55d3d701" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\99cea42a5383464aa612b9d94b89ecdeb827196e" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\9d356cbd37740d94190873700642ef028d58e1fc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\aabe066153461c774697f1a4e9fde69d1444dd7a" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\af5952aef093b91ddcd29a6672808a76a7b18bf4" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\b0585f8e268369fe02c1ca8bc1527d6c426fe4ed" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\b16d764f6e3568fa7069375c94a2e53d542939dc" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\b5e12f7bb2c30553c854cbf8ef88db3b5dfa8ba1" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\b9abc7d404414a3a7e3c367a81617ce16ace92c0" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\bec13ffb5f6643de06d302f4119fec9b56f6c0ac" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\c2374afb527c9dd45b3dfe7406dd0c1b0f7e71b7" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\c2824d81936f5a22f5fde5e7cd791f12b323e605" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\c4373f95c3896b2017e512e1058fe3766f4c8f24" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\c4d84186143e86865f2d216a7d98b0702cef78ba" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\c71ae0174be824b82f93cf21bcedb9aac0f89cc8" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\ccade200166b05fdfd4e51a80926e64f349a324f" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\cde0b3b449a2e3d3ca88d80ef361e3c724762070" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\cffd002ca513bb8568567555825f6232f99bc4b4" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\d0c3744e5b32e0304a3e16907bb015cb85d5e759" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\dc8fe24b3454b2455ffcd29a233cc5a10003d5ab" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\e7b09d4873f998de0fdb9d89062c426627638490" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\e7cb94a870ce37b1e487880b51a427111e0b889c" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\ef84388a49f24d30969333a3c5876ede9e5a2974" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f2746710f8e5862ebb3e9ac889b1774bd5dfc66b" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f30e58e3e019b94ec72cada01743a6af77cac32e" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f87a627a3a810c7700575ab05e64e4d218bdb850" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/10b4ef84a7d002262dd853fc8dc8a632" afterPath="$PROJECT_DIR$/storage/framework/views/10b4ef84a7d002262dd853fc8dc8a632" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/4dfbbf57cf0b4a4ee4b685ecbfdde34f" afterPath="$PROJECT_DIR$/storage/framework/views/4dfbbf57cf0b4a4ee4b685ecbfdde34f" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/566ddd533ddb34e0753fb2ecaf0ee272" afterPath="$PROJECT_DIR$/storage/framework/views/566ddd533ddb34e0753fb2ecaf0ee272" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/8c110fbc47388c1d352c5c90fa25627e" afterPath="$PROJECT_DIR$/storage/framework/views/8c110fbc47388c1d352c5c90fa25627e" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TagsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Answer/_form.blade.php" afterPath="$PROJECT_DIR$/resources/views/Answer/_form.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/328f7a75afe3194d99fc8894cea34a31c375793a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/44435b80a25925a72fd45975b3bea62c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/45bd56f72fdbb00fe40bd6cc930e5a8a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/5acc4bc7baa213b5896babf8d51f0cc4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/73e08bbf505b5c08ed5cd1d325c48279" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/95b567e9cc595dd978a5d6ce58a6097f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/99433f405ff600f508d5f99330d0c776" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/9b14fbfcb21ebbc1226b556143f805ee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/AnswerCommentsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionCommentsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/ade219e9fe761ea9851b9b8bc3ec7b4a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/c6f53663b094da3001f7343b8e672899" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/cb113fdecb4a44e2560a0557abf49a06" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/d3cffea0c45a8860c39d6fb8f646feb6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/d7207db05254597466caa89af08f544e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/e8909054310cbac23cae47edcc31d994" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/f07f251180c222e20a5bd3a7332d4c42" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/fa399b6ea4c5741ee84e6d1204ba9de2" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\bootstrap\cache\routes.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\04be196bb2d840a585d33301fb06c93eeb621c68" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\064c97e74d5fe6da02925455e69aaf3a0e865cf7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\10ca4b21b1ee6a8f4fb5975118758f6d75d16daf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\13fe771dba2ad58bb78732eb1aa105d332e4f239" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\152f9399f98b46d2c5f16f65ee73f5ea17694b79" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\1d2b327ef194ec6c8789a4e95a924b308410e621" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\239642e8651c096db3d54cc37add0ed13887d1ae" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\3984e19283cdb627cfbe5bd2b9de9fcfc1c9dc3c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\461f3cf0059dc893145906a588fcd368585b07c9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\4a982a42f2457bf692c00929e66d8009c47078bc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\4e68f015445ccf9c5d978842b8cc78648db63031" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\4f61563548d016f83608d672dc27afad310d8f1d" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\5358e2277daaa10e98b5839e12e685bbe5c68fa3" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\5390a797ff609cf5c084c1fff8e7e64b179104bd" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\54b786f9a1e15f2eaab6e99a18abe89c31d329c5" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\78a32e444f40b96863f675b0708ce91082e4d825" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\845259025c4ffdccc508602f5b941729eaa075d9" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\8bcad1a6a3614a32ecdcee17c2ca638159cd4f6e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\93c940442d884e1fb7d81da984761e8a6aecba86" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\94c3d2fc64c5b1c60a53dcb4315806a0842cc932" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\985e176fd56cbfc4bd895816a44f9f4e55d3d701" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\99cea42a5383464aa612b9d94b89ecdeb827196e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\9d356cbd37740d94190873700642ef028d58e1fc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\aabe066153461c774697f1a4e9fde69d1444dd7a" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\af5952aef093b91ddcd29a6672808a76a7b18bf4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\b0585f8e268369fe02c1ca8bc1527d6c426fe4ed" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\b16d764f6e3568fa7069375c94a2e53d542939dc" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\b5e12f7bb2c30553c854cbf8ef88db3b5dfa8ba1" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\b9abc7d404414a3a7e3c367a81617ce16ace92c0" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\bec13ffb5f6643de06d302f4119fec9b56f6c0ac" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\c2374afb527c9dd45b3dfe7406dd0c1b0f7e71b7" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\c2824d81936f5a22f5fde5e7cd791f12b323e605" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\c4373f95c3896b2017e512e1058fe3766f4c8f24" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\c4d84186143e86865f2d216a7d98b0702cef78ba" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\c71ae0174be824b82f93cf21bcedb9aac0f89cc8" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\ccade200166b05fdfd4e51a80926e64f349a324f" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\cde0b3b449a2e3d3ca88d80ef361e3c724762070" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\cffd002ca513bb8568567555825f6232f99bc4b4" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\d0c3744e5b32e0304a3e16907bb015cb85d5e759" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\dc8fe24b3454b2455ffcd29a233cc5a10003d5ab" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\e7b09d4873f998de0fdb9d89062c426627638490" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\e7cb94a870ce37b1e487880b51a427111e0b889c" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\ef84388a49f24d30969333a3c5876ede9e5a2974" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\f2746710f8e5862ebb3e9ac889b1774bd5dfc66b" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\f30e58e3e019b94ec72cada01743a6af77cac32e" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\Discussion Forum\laravel\storage\framework\sessions\f87a627a3a810c7700575ab05e64e4d218bdb850" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Questions.php" afterPath="$PROJECT_DIR$/app/Questions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Question/_form.blade.php" afterPath="$PROJECT_DIR$/resources/views/Question/_form.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/f6d2b7654c4da63987b47e1c4775a6d1" afterPath="$PROJECT_DIR$/storage/framework/views/f6d2b7654c4da63987b47e1c4775a6d1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Answer/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/Answer/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Question/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Answer/write.blade.php" afterPath="$PROJECT_DIR$/resources/views/Answer/write.blade.php" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,12 +100,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="feed.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Question/feed.blade.php">
+      <file leaf-file-name="QuestionsAnswersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.807693">
+              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionCommentsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionCommentsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+              <folding>
+                <element signature="e#40#58#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +125,8 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Answer/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state vertical-scroll-proportion="-9.346154">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -112,58 +135,48 @@
       <file leaf-file-name="_form.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Answer/_form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Answer/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.346153">
-              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/QuestionRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionAnswerRequest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/QuestionAnswerRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77440345">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Question/_form.blade.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.730769">
+              <caret line="22" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5090253">
+              <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Answers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -172,18 +185,8 @@
       <file leaf-file-name="write.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Answer/write.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ask.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Question/ask.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -202,13 +205,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2015_08_14_105652_add_user_id_to_tags_table.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Courses.php" />
         <option value="$PROJECT_DIR$/app/Tags.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_07_113250_create_tags_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" />
-        <option value="$PROJECT_DIR$/app/Questions.php" />
         <option value="$PROJECT_DIR$/resources/views/Answers/_form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Answers/answer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Answer/answer.blade.php" />
@@ -220,7 +220,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_08_25_131310_create_comments_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_25_124521_delete_answerComments_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_25_124542_delete_questionComments_table.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_07_113147_create_answers_table.php" />
         <option value="$PROJECT_DIR$/app/Answers.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/isAnswerable.php" />
@@ -238,21 +237,25 @@
         <option value="$PROJECT_DIR$/resources/views/Question/tagQuestions.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Question/courseQuestions.blade.php" />
         <option value="G:/website/New folder/allUpload.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/isOwnerOfAnswer.php" />
-        <option value="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Answer/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/AnswerBelongsToQuestion.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TagsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
         <option value="$PROJECT_DIR$/resources/views/Question/feed.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Answer/write.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Question/_form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/Answer/_form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/QuestionRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/QuestionAnswerRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/Question/_form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Questions.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/Answer/_form.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Answer/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AnswerCommentsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionCommentsController.php" />
       </list>
     </option>
   </component>
@@ -273,10 +276,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="766" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -301,7 +304,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -410,8 +412,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -521,18 +578,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="766" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28517398" sideWeight="0.07728706" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31379822" sideWeight="0.9227129" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20574887" sideWeight="0.9227129" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31594634" sideWeight="0.50293684" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32598424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18383518" sideWeight="0.49706313" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47874016" sideWeight="0.49706313" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -546,6 +603,29 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31594634" sideWeight="0.50293684" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32598424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47874016" sideWeight="0.49706313" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28517398" sideWeight="0.07728706" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3237519" sideWeight="0.9227129" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32740742" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -571,20 +651,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/isOwnerOfQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65384614">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_113337_create_answerComments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="39" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_113502_create_questionComments_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -669,20 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.6153846">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Answers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8076925">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -774,14 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/website/New folder/allUpload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -789,14 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -804,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,19 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CoursesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,34 +876,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <marker date="1441086454488" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441086454488" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Question/ask.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -887,72 +889,146 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Question/feed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Answer/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Answer/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Question/_form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Answer/_form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Answer/write.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.346153">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/QuestionRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/QuestionAnswerRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77440345">
+        <state vertical-scroll-proportion="0.9505376">
           <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62321794">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Question/_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35111877">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/QuestionRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29259896">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2975">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Answer/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.730769">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Answers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14629948">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.807693">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Answer/write.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Answer/_form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnswerCommentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4296029">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.730769">
+          <caret line="22" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Answer/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.346154">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionCommentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5090253">
+          <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="73" />
           <folding />
         </state>
       </provider>

@@ -15,33 +15,35 @@ Route::get('/','QuestionsController@index');
 
 // Question routes...
 Route::get('questions/ask', 'QuestionsController@ask');
-
 Route::get('questions/tagged/{tag}','QuestionsController@TagQuestions');
 Route::get('questions/courses/{course}','QuestionsController@CourseQuestions');
-
+Route::get('questions/{questions}/answers/write','QuestionsAnswersController@write');
 Route::resource('questions','QuestionsController',
     ['except' => ['create', 'index']]);
 
-Route::resource('tags','TagsController');
-
-Route::get('questions/{questions}/answers/write','QuestionsAnswersController@write');
 // Answer routes...
 Route::resource('questions.answers','QuestionsAnswersController',
     ['except' => ['create']]);
-
-// Profile routes...
-Route::resource('users','UsersController',
-    ['except' => ['create', 'store']]);
-
-
-// Course routes...
-Route::resource('courses','CoursesController');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
+//Comments routes...
+Route::resource('questions.comments','QuestionCommentsController');
+Route::resource('questions.answers.comments','AnswerCommentsController');
+
+// Course routes...
+Route::resource('courses','CoursesController');
+
+// Profile routes...
+Route::resource('users','UsersController',
+    ['except' => ['create', 'store']]);
+
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+//Tag routes...
+Route::resource('tags','TagsController');

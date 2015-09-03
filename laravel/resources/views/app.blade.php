@@ -50,6 +50,29 @@
     var postForm = function() {
         var answer = $('textarea[name="answer"]').html($('#summernote').code());
     }
+
+    $(document).ready(function(){
+        var PageURL = window.location.pathname,
+                URLVariables = PageURL.split('/');
+        for(var i=0;URLVariables[i]!=null;i++){
+
+        }
+
+        $(".writeComment").hide();
+        $("#comment").click(function(){
+            $(".writeComment").show();
+        });
+        $(".send-btn").click(function(){
+            $.ajax({
+                url : URLVariables[i-1]+'/comments',
+                type: "post",
+                data: {'comment':$('input[name=comment]').val(),'parentID':URLVariables[i-1] ,'_token': $('input[name=_token]').val()},
+                success: function(data){
+                    console.log(data);
+                }
+            });
+        });
+    });
 </script>
 @yield('footer')
 </body>

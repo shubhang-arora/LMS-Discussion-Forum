@@ -1,0 +1,20 @@
+<?php $__env->startSection('content'); ?>
+
+<h1>Questions</h1>
+
+<hr/>
+<hr/>
+<a href=<?php echo e(action('QuestionsController@ask')); ?>>Ask Questions</a>
+<hr/>
+<?php foreach($questions as $question): ?>
+    <article>
+        <h2><a href=<?php echo e(action('QuestionsController@show',$question->id)); ?>><?php echo e($question->question); ?></a></h2>
+        <div class="body"><?php echo e($question->description); ?></div>
+        <div class="footer"><?php echo e($question->created_at->diffForHumans()); ?></div>
+
+    </article>
+<?php endforeach; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

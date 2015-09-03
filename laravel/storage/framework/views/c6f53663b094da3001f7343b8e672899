@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LMS-DISCUSSION-FORUM</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css"  />
+    <link  rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <?php if(Auth::check()): ?>
+        <p align="right">
+            Welcome <?php echo e(Auth::user()->name); ?>
+
+            <br>
+            <a href=<?php echo e(action('Auth\AuthController@getLogout')); ?>>Logout</a>
+        </p>
+    <?php endif; ?>
+    <?php if ( ! (Auth::check())): ?>
+        <p align="right">
+            <a href=<?php echo e(action('Auth\AuthController@postLogin')); ?>>Login</a>
+            <a href=<?php echo e(action('Auth\AuthController@postRegister')); ?>>Register</a>
+        </p>
+
+    <?php endif; ?>
+    <?php echo $__env->yieldContent('content'); ?>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<link rel="stylesheet" href="<?php echo e(asset('includes/css/summernote.css')); ?>" >
+<script src="<?php echo e(asset('includes/js/summernote.min.js')); ?>"></script>
+<script>
+    $(document).ready(function() {
+        $('#summernote').summernote({
+            height: 300,
+
+            minHeight: null,
+            maxHeight: null,
+
+            focus: true,
+
+        });
+    });
+    var postForm = function() {
+        var answer = $('textarea[name="answer"]').html($('#summernote').code());
+    }
+
+    $(document).ready(function(){
+        var PageURL = window.location.pathname,
+                URLVariables = PageURL.split('/');
+        for(var i=0;URLVariables[i]!=null;i++){
+
+        }
+
+        $(".writeComment").hide();
+        $("#comment").click(function(){
+            $(".writeComment").show();
+        });
+        $(".send-btn").click(function(){
+            $.ajax({
+                url : URLVariables[i-1]+'/comments',
+                type: "post",
+                data: {'comment':$('input[name=comment]').val(),'pID':URLVariables[i-1] ,'_token': $('input[name=_token]').val()},
+                success: function(data){
+                    console.log(data);
+                }
+            });
+        });
+    });
+</script>
+<?php echo $__env->yieldContent('footer'); ?>
+</body>
+</html>

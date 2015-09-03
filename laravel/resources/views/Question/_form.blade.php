@@ -5,12 +5,12 @@
 
 <div class="form-group">
     {!! Form::label('question','Question:')!!}
-    <div id="summernote"></div>
+    {!! Form::text('question',null,['class'=>'form-control'])!!}
 </div>
 
 <div class="form-group">
     {!! Form::label('description','Description:')!!}
-    {!! Form::text('description',null,['class'=>'form-control'])!!}
+    <div id="summernote"></div>
 </div>
 <div class="form-group">
     {!! Form::label('tag_list','Tags:')!!}
