@@ -12,5 +12,20 @@
 
     <?php echo $__env->make('errors.list', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
+<?php $__env->startSection('footer'); ?>
+    <script>
+        $(document).ready(function() {
+            $('#description').summernote({
+                height: 300,
+
+                minHeight: null,
+                maxHeight: null,
+
+                focus: true,
+
+            });
+        });
+    </script>
+<?php $__env->stopSection(); ?>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

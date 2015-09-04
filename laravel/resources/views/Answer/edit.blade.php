@@ -10,4 +10,19 @@
     {!! Form::close() !!}
     @include('errors.list')
 
+@section('footer')
+    <script>
+        $(document).ready(function() {
+            $('#answer').summernote({
+                height: 300,
+
+                minHeight: null,
+                maxHeight: null,
+
+                focus: true,
+
+            });
+        });
+    </script>
+@endsection
 @stop

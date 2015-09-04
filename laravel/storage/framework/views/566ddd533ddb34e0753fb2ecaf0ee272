@@ -8,13 +8,14 @@
 <div class="form-group">
     <?php echo Form::label('question','Question:'); ?>
 
-    <div id="summernote"></div>
+    <?php echo Form::text('question',null,['class'=>'form-control']); ?>
+
 </div>
 
 <div class="form-group">
     <?php echo Form::label('description','Description:'); ?>
 
-    <?php echo Form::text('description',null,['class'=>'form-control']); ?>
+    <?php echo Form::textarea('description',null,['class'=>'form-control','id'=>'description']); ?>
 
 </div>
 <div class="form-group">
@@ -30,6 +31,17 @@
 
 <?php $__env->startSection('footer'); ?>
     <script>
+        $(document).ready(function() {
+            $('#description').summernote({
+                height: 300,
+
+                minHeight: null,
+                maxHeight: null,
+
+                focus: true,
+
+            });
+        });
         $('#courses_id').select2({
             placeholder: "Choose a Course",
             allowClear: true

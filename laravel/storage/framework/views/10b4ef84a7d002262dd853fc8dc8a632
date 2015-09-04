@@ -13,7 +13,7 @@
 <?php $__env->startSection('footer'); ?>
     <script>
         $(document).ready(function() {
-            $('#summernote').summernote({
+            $('#answer').summernote({
                 height: 300,
 
                 minHeight: null,
@@ -24,6 +24,7 @@
             });
         });
     </script>
+
 <?php $__env->stopSection(); ?>
 <?php $__env->stopSection(); ?>
 

@@ -10,7 +10,7 @@
 
 <div class="form-group">
     {!! Form::label('description','Description:')!!}
-    <div id="summernote"></div>
+    {!! Form::textarea('description',null,['class'=>'form-control','id'=>'description'])!!}
 </div>
 <div class="form-group">
     {!! Form::label('tag_list','Tags:')!!}
@@ -22,6 +22,17 @@
 
 @section('footer')
     <script>
+        $(document).ready(function() {
+            $('#description').summernote({
+                height: 300,
+
+                minHeight: null,
+                maxHeight: null,
+
+                focus: true,
+
+            });
+        });
         $('#courses_id').select2({
             placeholder: "Choose a Course",
             allowClear: true

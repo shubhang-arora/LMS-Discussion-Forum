@@ -10,5 +10,6 @@
     @include('Question._form',['SubmitButtonText'=>'Ask Question'])
     {!! Form::close() !!}
     @include('errors.list')
+@endsection
 
 @stop

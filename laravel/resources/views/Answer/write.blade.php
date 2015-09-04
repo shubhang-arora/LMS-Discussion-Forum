@@ -10,7 +10,22 @@
 @include('Answer._form',['SubmitButtonText'=>'Submit Answer'])
 {!! Form::close() !!}
 @include('errors.list')
+@endsection
 @section('footer')
+    <script>
+        $(document).ready(function() {
+            $('#answer').summernote({
+                height: 300,
+
+                minHeight: null,
+                maxHeight: null,
+
+                focus: true,
+
+            });
+        });
+    </script>
 
 @endsection
+
 @stop

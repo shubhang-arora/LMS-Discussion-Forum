@@ -11,6 +11,7 @@ use App\Http\Controllers\Controller;
 use App\Questions;
 use Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Input;
 
 class QuestionsAnswersController extends Controller
 {
@@ -52,12 +53,13 @@ class QuestionsAnswersController extends Controller
      */
     public function store(QuestionAnswerRequest $request)
     {
+
         $uri = $request->path();
         $uriExpanded=explode('/',$uri);
         $question_id=$uriExpanded[1];
 
         $answer = Auth::user()->answers()->create([
-            'answer'       =>      $request->input('answer'),
+            'answer'       =>      e(Input::get('answer')),
             'questions_id'   =>      $question_id
         ]);
         return redirect(action('QuestionsController@index'));

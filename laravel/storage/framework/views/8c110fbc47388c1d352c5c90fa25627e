@@ -1,7 +1,8 @@
 <div class="form-group" name="answer">
     <?php echo Form::label('answer','Answer:'); ?>
 
-    <div id="summernote"></div>
+    <?php echo Form::textarea('answer',null,['class'=>'form-control','id'=>'answer']); ?>
+
 </div>
 <div class="form-group">
     <?php echo Form::submit($SubmitButtonText,['class'=>'btn btn-primary form-control']); ?>

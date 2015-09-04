@@ -37,20 +37,29 @@
 <link rel="stylesheet" href="<?php echo e(asset('includes/css/summernote.css')); ?>" >
 <script src="<?php echo e(asset('includes/js/summernote.min.js')); ?>"></script>
 <script>
-    $(document).ready(function() {
-        $('#summernote').summernote({
-            height: 300,
 
-            minHeight: null,
-            maxHeight: null,
+    $(document).ready(function(){
+        var PageURL = window.location.pathname,
+                URLVariables = PageURL.split('/');
+        for(var i=0;URLVariables[i]!=null;i++){
 
-            focus: true,
+        }
 
+        $(".writeComment").hide();
+        $("#comment").click(function(){
+            $(".writeComment").show();
+        });
+        $(".send-btn").click(function(){
+            $.ajax({
+                url : URLVariables[i-1]+'/comments',
+                type: "post",
+                data: {'comment':$('input[name=comment]').val(),'parentID':URLVariables[i-1] ,'_token': $('input[name=_token]').val()},
+                success: function(data){
+                    console.log(data);
+                }
+            });
         });
     });
-    var postForm = function() {
-        var answer = $('textarea[name="answer"]').html($('#summernote').code());
-    }
 </script>
 <?php echo $__env->yieldContent('footer'); ?>
 </body>

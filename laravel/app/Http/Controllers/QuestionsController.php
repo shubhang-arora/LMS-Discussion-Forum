@@ -11,6 +11,7 @@ use App\Http\Controllers\Controller;
 use Auth;
 use App\Http\Requests\QuestionRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Input;
 
 class QuestionsController extends Controller
 {
@@ -113,7 +114,7 @@ class QuestionsController extends Controller
         $questions->update([
             'courses_id'    =>      $request->input('courses_id'),
             'question'      =>      $request->input('question'),
-            'description'   =>      $request->input('description')
+            'description'   =>      e(Input::get('description'))
         ]);
 
         $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
@@ -155,7 +156,7 @@ class QuestionsController extends Controller
         $questions=Auth::user()->questions()->create([
             'courses_id' => $request->input('courses_id'),
             'question' => $request->input('question'),
-            'description' => $request->input('description')
+            'description' => e(Input::get('description'))
         ]);
         $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
     }
