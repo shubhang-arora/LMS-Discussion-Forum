@@ -29,7 +29,7 @@
 
             <article>
                     <?php foreach($answers as $answer): ?>
-                    <a href="<?php echo e(action('QuestionsAnswersController@show',[$question->id,$answer->id])); ?>"><?php echo e($answer->answer); ?></a>
+                    <a href="<?php echo e(action('QuestionsAnswersController@show',[$question->id,$answer->id])); ?>"><?php echo $answer->answer; ?></a>
                         <br>
                     <hr>
                     <?php endforeach; ?>

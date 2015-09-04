@@ -27,7 +27,7 @@
 
             <article>
                     @foreach($answers as $answer)
-                    <a href="{{action('QuestionsAnswersController@show',[$question->id,$answer->id])}}">{{$answer->answer}}</a>
+                    <a href="{{action('QuestionsAnswersController@show',[$question->id,$answer->id])}}">{!!$answer->answer!!}</a>
                         <br>
                     <hr>
                     @endforeach

@@ -4,7 +4,7 @@
     <hr>
     <hr>
 
-    <h4><?php echo e($answer->answer); ?></h4>
+    <h4><?php echo $answer->answer; ?></h4>
     <?php if($aid!=-1): ?>
         <a href="<?php echo e(action('QuestionsAnswersController@edit',[$question->id,$aid])); ?>">Edit</a>
     <?php endif; ?>

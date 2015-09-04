@@ -114,7 +114,7 @@ class QuestionsController extends Controller
         $questions->update([
             'courses_id'    =>      $request->input('courses_id'),
             'question'      =>      $request->input('question'),
-            'description'   =>      e(Input::get('description'))
+            'description'   =>      $request->input('description')
         ]);
 
         $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
@@ -156,7 +156,7 @@ class QuestionsController extends Controller
         $questions=Auth::user()->questions()->create([
             'courses_id' => $request->input('courses_id'),
             'question' => $request->input('question'),
-            'description' => e(Input::get('description'))
+            'description' => $request->input('description')
         ]);
         $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
     }
