@@ -56,7 +56,7 @@ class QuestionsController extends Controller
 
         $this->askQuestion($request);
 
-        //flash()->success('You have asked a question !!','Nice');
+        flash('Your Question Has Been Posted');
 
         return redirect('/');
     }

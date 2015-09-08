@@ -23,8 +23,10 @@ class isOwnerOfQuestion
         $userId=Auth::user()->id;
         $question = DB::table('questions')->where('id','=' ,$id)->first();
         if($userId!=$question->user_id){
+            flash('You Are Not The Owner Of the Question')->important();
             return redirect($uriExpanded[0].'/'.$uriExpanded[1]);
         }
+
         return $next($request);
     }
 }

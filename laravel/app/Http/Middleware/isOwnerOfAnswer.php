@@ -25,6 +25,7 @@ class isOwnerOfAnswer
         $answer = DB::table('answers')->where('id','=' ,$id)->first();
 
         if($userId!=$answer->user_id){
+            flash('You Are Not The Owner Of the Answer')->important();
             return redirect($uriExpanded[0].'/'.$uriExpanded[1]);
         }
         return $next($request);

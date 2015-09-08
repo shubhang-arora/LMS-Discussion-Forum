@@ -27,7 +27,8 @@
         "App\\Providers\\AppServiceProvider",
         "App\\Providers\\EventServiceProvider",
         "App\\Providers\\RouteServiceProvider",
-        "Lanz\\Commentable\\CommentableServiceProvider"
+        "Lanz\\Commentable\\CommentableServiceProvider",
+        "Laracasts\\Flash\\FlashServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -44,7 +45,8 @@
         "App\\Providers\\AppServiceProvider",
         "App\\Providers\\EventServiceProvider",
         "App\\Providers\\RouteServiceProvider",
-        "Lanz\\Commentable\\CommentableServiceProvider"
+        "Lanz\\Commentable\\CommentableServiceProvider",
+        "Laracasts\\Flash\\FlashServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",

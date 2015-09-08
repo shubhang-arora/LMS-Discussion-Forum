@@ -62,6 +62,8 @@ class QuestionsAnswersController extends Controller
             'answer'       =>      $request->input('answer'),
             'questions_id'   =>      $question_id
         ]);
+
+        flash('Your Answer Has been Posted');
         return redirect(action('QuestionsController@index'));
 
     }
