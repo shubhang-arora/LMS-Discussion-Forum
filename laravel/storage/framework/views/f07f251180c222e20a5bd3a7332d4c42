@@ -9,9 +9,10 @@
 <?php foreach($questions as $question): ?>
     <article>
         <h2><a href=<?php echo e(action('QuestionsController@show',$question->id)); ?>><?php echo e($question->question); ?></a></h2>
-        <div class="body"><?php echo e($question->description); ?></div>
+        <div class="body"><?php echo $question->description; ?></div>
         <div class="footer"><?php echo e($question->created_at->diffForHumans()); ?></div>
-
+        <?php echo e($question->answers->count()); ?> Response
+        <hr>
     </article>
 <?php endforeach; ?>
 
