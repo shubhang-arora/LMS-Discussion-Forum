@@ -147,6 +147,7 @@ return [
         Lanz\Commentable\CommentableServiceProvider::class,
 
         Laracasts\Flash\FlashServiceProvider::class,
+        Conner\Likeable\LikeableServiceProvider::class,
     ],
 
     /*

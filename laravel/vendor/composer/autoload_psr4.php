@@ -29,6 +29,7 @@ return array(
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
+    'Conner\\Likeable\\' => array($vendorDir . '/rtconner/laravel-likeable/src'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
     'App\\' => array($baseDir . '/app'),
 );

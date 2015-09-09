@@ -47,3 +47,6 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 //Tag routes...
 Route::resource('tags','TagsController');
+
+//Vote route...
+Route::post('upvote','VoteController@upVote');

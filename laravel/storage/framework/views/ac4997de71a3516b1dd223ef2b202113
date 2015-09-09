@@ -12,6 +12,13 @@
         <div class="body"><?php echo $question->description; ?></div>
         <div class="footer"><?php echo e($question->created_at->diffForHumans()); ?></div>
         <?php echo e($question->answers->count()); ?> Response
+        <br>
+        <?php echo Form::open(); ?>
+
+        <button type="button" id="<?php echo e($question->id); ?>" class="upvote-ques">Upvote</button>
+        <button type="button">Downvote</button>
+        <?php echo Form::close(); ?>
+
         <hr>
     </article>
 <?php endforeach; ?>

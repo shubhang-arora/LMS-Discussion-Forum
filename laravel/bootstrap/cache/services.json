@@ -28,7 +28,8 @@
         "App\\Providers\\EventServiceProvider",
         "App\\Providers\\RouteServiceProvider",
         "Lanz\\Commentable\\CommentableServiceProvider",
-        "Laracasts\\Flash\\FlashServiceProvider"
+        "Laracasts\\Flash\\FlashServiceProvider",
+        "Conner\\Likeable\\LikeableServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -147,6 +148,9 @@
         "Illuminate\\Redis\\RedisServiceProvider": [],
         "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider": [],
         "Illuminate\\Translation\\TranslationServiceProvider": [],
-        "Illuminate\\Html\\HtmlServiceProvider": []
+        "Illuminate\\Html\\HtmlServiceProvider": [],
+        "Conner\\Likeable\\LikeableServiceProvider": [
+            "artisan.start"
+        ]
     }
 }

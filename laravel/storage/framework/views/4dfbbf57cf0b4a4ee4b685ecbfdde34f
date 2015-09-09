@@ -45,7 +45,17 @@
         for(var i=0;URLVariables[i]!=null;i++){
 
         }
-
+        $(".upvote-ques").click(function()
+        {
+            $.ajax({
+                url : 'upvote',
+                type: "post",
+                data: {'id':$(this).attr("id"),'_token': $('input[name=_token]').val()},
+                success: function(data){
+                    console.log(data);
+                }
+            })
+        });
         $(".writeComment").hide();
         $("#comment").click(function(){
             $(".writeComment").show();

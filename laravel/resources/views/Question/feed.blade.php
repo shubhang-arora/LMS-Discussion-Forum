@@ -14,6 +14,11 @@
         <div class="body">{!!$question->description!!}</div>
         <div class="footer">{{$question->created_at->diffForHumans()}}</div>
         {{$question->answers->count()}} Response
+        <br>
+        {!! Form::open() !!}
+        <button type="button" id="{{$question->id}}" class="upvote-ques">Upvote</button>
+        <button type="button">Downvote</button>
+        {!! Form::close() !!}
         <hr>
     </article>
 @endforeach
