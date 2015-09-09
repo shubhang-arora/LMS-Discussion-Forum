@@ -12,5 +12,5 @@ class Like extends Eloquent {
 	{
 		return $this->morphTo();
 	}
-	
+
 }

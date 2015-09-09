@@ -15,8 +15,11 @@
         <br>
         <?php echo Form::open(); ?>
 
-        <button type="button" id="<?php echo e($question->id); ?>" class="upvote-ques">Upvote</button>
-        <button type="button">Downvote</button>
+        <?php if($question->liked()): ?>
+            <button type="button" id="<?php echo e($question->id); ?>" class="vote-question"><?php echo e($question->likeCount); ?> | Upvoted</button>
+        <?php else: ?>
+            <button type="button" id="<?php echo e($question->id); ?>" class="vote-question"><?php echo e($question->likeCount); ?> | Upvote</button>
+        <?php endif; ?>
         <?php echo Form::close(); ?>
 
         <hr>

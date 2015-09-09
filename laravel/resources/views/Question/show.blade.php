@@ -2,7 +2,6 @@
 
 @section('content')
 <h1>{{$question->question}}</h1>
-
 @if(\Illuminate\Support\Facades\DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->count()==1)
     <a href="{{action('QuestionsAnswersController@edit',[$question->id,$aid])}}">Edit Your Answer</a>
 @else
@@ -12,11 +11,11 @@
 <hr>
     <a id="comment">Comment</a>
     <div class="writeComment">
-        {!!    Form::open()    !!}
+        {!! Form::open()!!}
         <div class="form-group">
             {!!    Form::text('comment',null,['class'=>'comment form-control'])   !!}
         </div>
-        {!!    Form::close()    !!}
+        {!!Form::close()!!}
         <div class="form-group">
             {!!    Form::submit("Post Comment",['class'=>'send-btn'])    !!}
         </div>
@@ -29,6 +28,13 @@
                     @foreach($answers as $answer)
                     <a href="{{action('QuestionsAnswersController@show',[$question->id,$answer->id])}}">{!!$answer->answer!!}</a>
                         <br>
+                    {!! Form::open() !!}
+                    @if($answer->liked())
+                        <button type="button" id="{{$answer->id}}" class="vote-answer">{{$answer->likeCount}} | Upvoted</button>
+                    @else
+                        <button type="button" id="{{$answer->id}}" class="vote-answer">{{$answer->likeCount}} | Upvote</button>
+                    @endif
+                    {!! Form::close() !!}
                     <hr>
                     @endforeach
 

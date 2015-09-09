@@ -16,8 +16,11 @@
         {{$question->answers->count()}} Response
         <br>
         {!! Form::open() !!}
-        <button type="button" id="{{$question->id}}" class="upvote-ques">Upvote</button>
-        <button type="button">Downvote</button>
+        @if($question->liked())
+            <button type="button" id="{{$question->id}}" class="vote-question">{{$question->likeCount}} | Upvoted</button>
+        @else
+            <button type="button" id="{{$question->id}}" class="vote-question">{{$question->likeCount}} | Upvote</button>
+        @endif
         {!! Form::close() !!}
         <hr>
     </article>
