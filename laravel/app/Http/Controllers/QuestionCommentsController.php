@@ -16,8 +16,18 @@ class QuestionCommentsController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $id = $request->input('parentID');
+        $questions = Questions::find($id);
+        $totalComments=$questions->comments()->count();
+        $allComments = array();
+        for($i=0;$i<$totalComments;$i++){
+            $allComments[$i]=$questions->comments[$i]->body;
+            echo $allComments[$i].'<br>';
+        }
+
+
 
     }
 
@@ -39,16 +49,17 @@ class QuestionCommentsController extends Controller
      */
     public function store(Request $request)
     {
-        $questions = Questions::first();
+        $id=$request->input('parentID');
+        $questions = Questions::find($id);
 
         $comment = new Comment();
         $comment->body = $request->input('comment');
-        $comment->parent_id = $request->input('parentID');
+        $comment->parent_id = $id;
         $comment->user_id = Auth::id();
 
         $questions->comments()->save($comment);
 
-        dd(Questions::first()->comments);
+        echo $questions;
     }
 
     /**
