@@ -4,7 +4,7 @@
 $(".vote-question").click(function()
 {   var qid = $(this).attr("id");
     $.ajax({
-        url : 'upvote/ques',
+        url : '/upvote/question',
         type: "post",
         data: {'id':$(this).attr("id"),'_token': $('input[name=_token]').val()},
         success: function(data){
@@ -19,10 +19,11 @@ $(".vote-question").click(function()
 $(".vote-answer").click(function()
 {   var aid = $(this).attr("id");
     $.ajax({
-        url : 'upvote/answer',
+        url : '/upvote/answer',
         type: "post",
         data: {'id':$(this).attr("id"),'_token': $('input[name=_token]').val()},
         success: function(data){
+
             $("#"+aid).html(data);
         }
     })

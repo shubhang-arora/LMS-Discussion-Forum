@@ -12,7 +12,6 @@ class QuestionVotesController extends Controller
     public function upVote(Request $request)
     {
         $id = $request->input('id');
-
         $question = Questions::findorfail($id);
         if(!$question->liked())
         {

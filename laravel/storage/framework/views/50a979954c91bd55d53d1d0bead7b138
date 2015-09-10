@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 
-    <h1><?php echo e($question->question); ?></h1>
+    <h1><?php echo $question->question; ?></h1>
     <hr>
     <hr>
 

@@ -11,9 +11,9 @@ class AnswerVotesController extends Controller
 {
     public function upVote(Request $request)
     {
-        $i = $request->input('id');
+        $id = $request->input('id');
 
-        $answer = Answers::findorfail($i);
+        $answer = Answers::findorfail($id);
         if(!$answer->liked())
         {
             $answer->like();
