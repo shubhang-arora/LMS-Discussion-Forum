@@ -16,7 +16,7 @@
 <div class="container">
     @if (Auth::check())
         <p align="right">
-            Welcome {{Auth::user()->name}}
+            Welcome <a href="{{action('UsersController@show',Auth::user()->id)}}">{{Auth::user()->name}}</a>
             <br>
             <a href={{action('Auth\AuthController@getLogout')}}>Logout</a>
         </p>

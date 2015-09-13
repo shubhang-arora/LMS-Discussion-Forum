@@ -16,8 +16,7 @@
 <div class="container">
     <?php if(Auth::check()): ?>
         <p align="right">
-            Welcome <?php echo e(Auth::user()->name); ?>
-
+            Welcome <a href="<?php echo e(action('UsersController@show',Auth::user()->id)); ?>"><?php echo e(Auth::user()->name); ?></a>
             <br>
             <a href=<?php echo e(action('Auth\AuthController@getLogout')); ?>>Logout</a>
         </p>

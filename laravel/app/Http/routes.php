@@ -40,7 +40,7 @@ Route::resource('courses','CoursesController',
 
 // Profile routes...
 Route::resource('users','UsersController',
-    ['except' => ['create', 'store']]);
+    ['except' => ['create', 'store', 'index']]);
 
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
@@ -59,5 +59,6 @@ Route::post('upvote/answer','AnswerVotesController@upVote');
 Route::get('admin','AdminController@index');
 Route::get('admin/create/courses','CoursesController@create');
 Route::get('admin/create/tags','TagsController@create');
+Route::get('admin/users','UsersController@index');
 
 

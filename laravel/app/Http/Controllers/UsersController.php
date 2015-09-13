@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -13,6 +13,8 @@ class UsersController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('isAdmin',
+            ['only' =>  ['index']]);
     }
 
 
@@ -23,7 +25,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+        return view('User.index',compact('users'));
     }
 
     /**
@@ -55,7 +58,9 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::findOrfail($id);
+        return view('User.show',compact('user'));
+
     }
 
     /**
