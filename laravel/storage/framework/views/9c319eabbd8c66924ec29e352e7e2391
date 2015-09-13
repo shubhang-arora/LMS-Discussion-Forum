@@ -1,6 +1,7 @@
 <?php $__env->startSection('content'); ?>
 
     <h1>Add Tags</h1>
+
     <hr/>
 
     <?php echo Form::open(['url' => 'tags']); ?>

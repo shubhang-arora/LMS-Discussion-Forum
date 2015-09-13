@@ -35,7 +35,8 @@ Route::resource('questions.comments','QuestionCommentsController');
 Route::resource('questions.answers.comments','AnswerCommentsController');
 
 // Course routes...
-Route::resource('courses','CoursesController');
+Route::resource('courses','CoursesController',
+    ['except'   =>  ['create']]);
 
 // Profile routes...
 Route::resource('users','UsersController',
@@ -46,11 +47,17 @@ Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 //Tag routes...
-Route::resource('tags','TagsController');
+Route::resource('tags','TagsController',
+    ['except'   => ['create']]);
 
 //Vote route...
 
 Route::post('upvote/question','QuestionVotesController@upVote');
 Route::post('upvote/answer','AnswerVotesController@upVote');
+
+//admin route...
+Route::get('admin','AdminController@index');
+Route::get('admin/create/courses','CoursesController@create');
+Route::get('admin/create/tags','TagsController@create');
 
 
