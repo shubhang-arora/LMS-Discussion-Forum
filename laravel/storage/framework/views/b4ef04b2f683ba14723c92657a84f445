@@ -1,0 +1,13 @@
+<?php $__env->startSection('content'); ?>
+    <h1>Designations</h1>
+    <hr>
+    <?php foreach($designations as $designation): ?>
+        <article>
+            <?php echo e($designation->designation); ?>
+
+            <br>
+
+        </article>
+    <?php endforeach; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

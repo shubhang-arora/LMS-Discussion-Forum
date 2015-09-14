@@ -9,8 +9,5 @@
     <hr>
     @if(DB::table('admin')->where('user_id',Auth::user()->id)->count()==1)
         <h3>Admin Controls</h3>
-        <ul>
-
-        </ul>
     @endif
 @endsection

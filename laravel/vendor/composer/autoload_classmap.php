@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddCourseIdToTagsTable' => $baseDir . '/database/migrations/2015_08_09_113733_add_course_id_to_tags_table.php',
+    'AddCourseNameColoumnToUsersDesignationsTable' => $baseDir . '/database/migrations/2015_09_15_030359_add_course_name_coloumn_to_users_designations_table.php',
     'AddUserIdToTagsTable' => $baseDir . '/database/migrations/2015_08_14_105652_add_user_id_to_tags_table.php',
     'CreateAdminTable' => $baseDir . '/database/migrations/2015_08_31_101745_create_admin_table.php',
     'CreateAnswerCommentsTable' => $baseDir . '/database/migrations/2015_08_07_113337_create_answerComments_table.php',

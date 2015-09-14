@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+// Index route...
 Route::get('/','QuestionsController@index');
 
 // Question routes...
@@ -60,5 +60,11 @@ Route::get('admin','AdminController@index');
 Route::get('admin/create/courses','CoursesController@create');
 Route::get('admin/create/tags','TagsController@create');
 Route::get('admin/users','UsersController@index');
+Route::get('admin/create/designation','DesignationController@create');
+Route::post('admin/create/designation','DesignationController@store');
+
+//Designation route...
+Route::resource('designation','DesignationController',
+    ['only'   => ['index', 'show']]);
 
 

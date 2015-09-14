@@ -1,0 +1,13 @@
+<?php $__env->startSection('content'); ?>
+    <hr>
+    <h3><a href="<?php echo e(action('UsersController@show',$user->id)); ?>"><?php echo e($user->name); ?></a></h3>
+    <ul>
+        <li><?php echo e($user->email); ?></li>
+    </ul>
+    <hr>
+    <?php if(DB::table('admin')->where('user_id',Auth::user()->id)->count()==1): ?>
+        <h3>Admin Controls</h3>
+        
+    <?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

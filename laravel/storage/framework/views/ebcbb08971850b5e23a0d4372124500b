@@ -1,0 +1,14 @@
+<?php $__env->startSection('content'); ?>
+    <h1>Admin</h1>
+    <hr>
+    <h4>Links</h4>
+    <ul>
+        <li><a href="<?php echo e(action('CoursesController@create')); ?>">Create Courses</a></li>
+        <li><a href="<?php echo e(action('CoursesController@index')); ?>">View Courses</a></li>
+        <li><a href="<?php echo e(action('TagsController@create')); ?>">Create Tags</a></li>
+        <li><a href="<?php echo e(action('TagsController@index')); ?>">View Tags</a></li>
+        <li><a href="<?php echo e(action('UsersController@index')); ?>">View Users</a></li>
+        <li><a href="<?php echo e(action('DesignationController@create')); ?>">Create Designation</a></li>
+    </ul>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

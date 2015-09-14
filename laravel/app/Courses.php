@@ -33,4 +33,8 @@ class Courses extends Model
         return $this->hasMany('App\Tags');
     }
 
+    public function designations()
+    {
+        return $this->hasMany('App\Designations');
+    }
 }

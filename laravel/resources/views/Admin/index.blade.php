@@ -10,5 +10,6 @@
         <li><a href="{{action('TagsController@create')}}">Create Tags</a></li>
         <li><a href="{{action('TagsController@index')}}">View Tags</a></li>
         <li><a href="{{action('UsersController@index')}}">View Users</a></li>
+        <li><a href="{{action('DesignationController@create')}}">Create Designation</a></li>
     </ul>
 @endsection
