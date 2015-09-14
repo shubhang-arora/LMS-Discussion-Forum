@@ -9,5 +9,6 @@
         <li><a href="{{action('CoursesController@index')}}">View Courses</a></li>
         <li><a href="{{action('TagsController@create')}}">Create Tags</a></li>
         <li><a href="{{action('TagsController@index')}}">View Tags</a></li>
+        <li><a href="{{action('UsersController@index')}}">View Users</a></li>
     </ul>
 @endsection
