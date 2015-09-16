@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
 <h1><?php echo e($question->question); ?></h1>
-
+<h3><?php echo $question->description; ?></h3>
 <?php if(\Illuminate\Support\Facades\DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->count()==1): ?>
     <a href="<?php echo e(action('QuestionsAnswersController@edit',[$question->id,$aid])); ?>">Edit Your Answer</a>
 <?php else: ?>
@@ -10,18 +10,7 @@
 <hr>
     <a id="comment">Comment</a>
     <div class="writeComment">
-        <?php echo Form::open(); ?>
 
-        <div class="form-group">
-            <?php echo Form::text('comment',null,['class'=>'comment form-control']); ?>
-
-        </div>
-        <?php echo Form::close(); ?>
-
-        <div class="form-group">
-            <?php echo Form::submit("Post Comment",['class'=>'send-btn']); ?>
-
-        </div>
     </div>
 <hr>
 
@@ -31,6 +20,15 @@
                     <?php foreach($answers as $answer): ?>
                     <a href="<?php echo e(action('QuestionsAnswersController@show',[$question->id,$answer->id])); ?>"><?php echo $answer->answer; ?></a>
                         <br>
+                    <?php echo Form::open(); ?>
+
+                    <?php if($answer->liked()): ?>
+                        <button type="button" id="<?php echo e($answer->id); ?>" class="vote-answer"><?php echo e($answer->likeCount); ?> | Upvoted</button>
+                    <?php else: ?>
+                        <button type="button" id="<?php echo e($answer->id); ?>" class="vote-answer"><?php echo e($answer->likeCount); ?> | Upvote</button>
+                    <?php endif; ?>
+                    <?php echo Form::close(); ?>
+
                     <hr>
                     <?php endforeach; ?>
 

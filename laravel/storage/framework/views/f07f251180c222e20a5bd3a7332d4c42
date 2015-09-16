@@ -12,6 +12,16 @@
         <div class="body"><?php echo $question->description; ?></div>
         <div class="footer"><?php echo e($question->created_at->diffForHumans()); ?></div>
         <?php echo e($question->answers->count()); ?> Response
+        <br>
+        <?php echo Form::open(); ?>
+
+        <?php if($question->liked()): ?>
+            <button type="button" id="<?php echo e($question->id); ?>" class="vote-question"><?php echo e($question->likeCount); ?> | Upvoted</button>
+        <?php else: ?>
+            <button type="button" id="<?php echo e($question->id); ?>" class="vote-question"><?php echo e($question->likeCount); ?> | Upvote</button>
+        <?php endif; ?>
+        <?php echo Form::close(); ?>
+
         <hr>
     </article>
 <?php endforeach; ?>

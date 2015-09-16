@@ -11,10 +11,13 @@ use Lanz\Commentable\Comment;
 
 class QuestionCommentsController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
+     * Displays a list of all the comments for current question.
      *
-     * @return Response
+     * @param Request $request
+     *
+     *
      */
     public function index(Request $request)
     {
@@ -24,7 +27,7 @@ class QuestionCommentsController extends Controller
         $allComments = array();
         for($i=0;$i<$totalComments;$i++){
             $allComments[$i]=$questions->comments[$i]->body;
-            echo $allComments[$i].'<br>';
+            echo '<li class="list-group-item">'.$allComments[$i].'</li>';
         }
 
 
@@ -49,17 +52,17 @@ class QuestionCommentsController extends Controller
      */
     public function store(Request $request)
     {
+
         $id=$request->input('parentID');
         $questions = Questions::find($id);
 
         $comment = new Comment();
         $comment->body = $request->input('comment');
-        $comment->parent_id = $id;
         $comment->user_id = Auth::id();
 
         $questions->comments()->save($comment);
 
-        echo $questions;
+        echo $comment;
     }
 
     /**

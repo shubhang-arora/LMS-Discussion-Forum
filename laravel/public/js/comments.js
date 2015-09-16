@@ -12,15 +12,19 @@ function parentID(){
 }
 
 function loadComments(){
+    var comment= $(".writeComment");
+    comment.empty();
     $.ajax({
         url : parentID()+'/comments',
         type: "get",
         data: {'parentID':parentID()},
         success: function(data){
-            $("#comment").after("<br>"+data);
+            $(".writeComment").prepend('<div class="panel panel-default"><ul class="list-group">'+data+'</ul></div>');
 
         }
     });
+    comment.append('<div class="form-group"><input type="text" name="comment" class="form-control" id="write"></div>');
+
 }
 
 function postComment(){
@@ -28,22 +32,22 @@ function postComment(){
         url : parentID()+'/comments',
         type: "post",
         data: {'comment':$('input[name=comment]').val(),'parentID':parentID() ,'_token': $('input[name=_token]').val()},
-        success: function(data){
-            console.log(data);
+        success: function(){
+
+            loadComments();
         }
     });
 }
 
 $(document).ready(function(){
-
-
-    $(".writeComment").hide();
     $("#comment").click(function(){
         loadComments();
-        $(".writeComment").show();
-    });
-    $(".send-btn").click(function(){
 
-        postComment();
     });
+
+    $(document).on('keypress', 'input#write',function(e) {
+        if (e.which == 13) {
+            postComment();
+        }
+    })
 });

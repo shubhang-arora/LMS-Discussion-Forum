@@ -16,8 +16,7 @@
 <div class="container">
     <?php if(Auth::check()): ?>
         <p align="right">
-            Welcome <?php echo e(Auth::user()->name); ?>
-
+            Welcome <a href="<?php echo e(action('UsersController@show',Auth::user()->id)); ?>"><?php echo e(Auth::user()->name); ?></a>
             <br>
             <a href=<?php echo e(action('Auth\AuthController@getLogout')); ?>>Logout</a>
         </p>
@@ -29,14 +28,21 @@
         </p>
 
     <?php endif; ?>
+        <?php echo $__env->make('flash::message', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo $__env->yieldContent('content'); ?>
 </div>
+
 <script src="<?php echo e(asset('js/comments.js')); ?>"></script>
 <script src="<?php echo e(asset('js/summernote.js')); ?>"></script>
+<script src="<?php echo e(asset('js/upvote.js')); ?>"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 <script src="<?php echo e(asset('includes/js/summernote.min.js')); ?>"></script>
 
+<script>
+    $('div.alert').not('_alert-important').delay(3000).slideUp(3000);
+
+</script>
 <?php echo $__env->yieldContent('footer'); ?>
 </body>
 </html>
