@@ -14,7 +14,6 @@
                 <br>
                 <hr>
             @endforeach
-
         </article>
     @endunless
 

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Courses;
+use App\Departments;
+use App\Schools;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -17,9 +19,6 @@ class CoursesController extends Controller
         $this->middleware('auth');
         $this->middleware('isAdmin');
     }
-
-
-
     /**
      * Display a listing of the resource.
      *
@@ -38,7 +37,8 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        return view('Course.create');
+        $departments = Departments::lists('department_name','id');
+        return view('Course.create',compact('schools', 'departments'));
     }
 
     /**
@@ -49,8 +49,11 @@ class CoursesController extends Controller
      */
     public function store(CourseRequest $request)
     {
-        //
-        Courses::create($request->all());
+        Courses::create([
+            'course_id'         =>$request->input('course_id'),
+            'course_name'       =>$request->input('course_name'),
+            'departments_id'    =>$request->input('departments_id')
+        ]);
         return redirect(action('CoursesController@index'));
     }
 

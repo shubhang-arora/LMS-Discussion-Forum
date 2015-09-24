@@ -24,8 +24,9 @@ class CourseRequest extends Request
     public function rules()
     {
         return [
-            'course_id' => 'required|min:6',
-            'course_name' => 'required'
+            'course_id'         =>      'required|min:6',
+            'course_name'       =>      'required',
+            'departments_id'    =>      'required'
            //
         ];
     }

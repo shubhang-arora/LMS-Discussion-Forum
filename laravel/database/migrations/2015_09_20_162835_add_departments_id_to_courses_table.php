@@ -30,7 +30,7 @@ class AddDepartmentsIdToCoursesTable extends Migration
     public function down()
     {
         Schema::table('courses', function (Blueprint $table) {
-            //
+            $table->dropColumn('departments_id');
         });
     }
 }

@@ -9,7 +9,9 @@ class Courses extends Model
 
     protected $fillable = [
         'course_id',
-        'course_name'
+        'course_name',
+        'departments_id',
+        'schools_id'
     ];
 
     /**

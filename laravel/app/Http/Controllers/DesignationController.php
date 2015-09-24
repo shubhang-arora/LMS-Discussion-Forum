@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Departments;
 use App\Designations;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -98,7 +100,15 @@ class DesignationController extends Controller
 
     public function assign()
     {
-        $schools = Schools::all();
-        return view('Designation.assign',compact('schools'));
+        $users = User::lists('name','id');
+        $schools = Schools::lists('school_name','id');
+        $departments = Departments::lists('department_name','id');
+        $designations = Designations::lists('designation','id');
+        return view('Designation.assign',compact('schools', 'departments', 'designations', 'users'));
+    }
+
+    public function assigned()
+    {
+
     }
 }

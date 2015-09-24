@@ -1,8 +1,8 @@
 @extends('app')
 
 @section('content')
-    @foreach($schools as $school)
-        {{$school->school_name}}
-        <br>
-    @endforeach
+    {!! Form::open() !!}
+    @include('Designation._assignForm',['SubmitButtonText'=>'Assign Designation'])
+    {!! Form::close() !!}
+    @include('errors.list')
 @endsection
