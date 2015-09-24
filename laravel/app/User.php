@@ -64,4 +64,13 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     public function designation(){
         return $this->hasOne('App\Designation');
     }
+
+    public function school()
+    {
+        return $this->belongsTo('App\School');
+    }
+
+    public function departments(){
+        return $this->belongsTo('App\Departments');
+    }
 }

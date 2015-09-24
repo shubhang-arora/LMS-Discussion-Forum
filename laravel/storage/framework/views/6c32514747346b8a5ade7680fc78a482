@@ -1,0 +1,14 @@
+<?php $__env->startSection('content'); ?>
+    <h1>Schools</h1>
+    <hr>
+
+    <?php foreach($schools as $school): ?>
+        <article>
+
+            <?php echo e($school->school_name); ?>
+
+            <br>
+        </article>
+    <?php endforeach; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

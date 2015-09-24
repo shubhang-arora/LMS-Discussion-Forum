@@ -8,9 +8,16 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Requests\DesignationRequest;
 use App\Http\Controllers\Controller;
+use App\Schools;
 
 class DesignationController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('isAdmin');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -87,5 +94,11 @@ class DesignationController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function assign()
+    {
+        $schools = Schools::all();
+        return view('Designation.assign',compact('schools'));
     }
 }

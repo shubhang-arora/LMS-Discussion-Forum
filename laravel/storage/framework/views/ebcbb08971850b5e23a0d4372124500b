@@ -9,6 +9,10 @@
         <li><a href="<?php echo e(action('TagsController@index')); ?>">View Tags</a></li>
         <li><a href="<?php echo e(action('UsersController@index')); ?>">View Users</a></li>
         <li><a href="<?php echo e(action('DesignationController@create')); ?>">Create Designation</a></li>
+        <li><a href="<?php echo e(action('SchoolController@create')); ?>">Create Schools</a></li>
+        <li><a href="<?php echo e(action('SchoolController@index')); ?>">View Schools</a></li>
+        <li><a href="<?php echo e(action('DepartmentController@create')); ?>">Create Department</a></li>
+        <li><a href="<?php echo e(action('DesignationController@assign')); ?>">Assign Designations</a></li>
     </ul>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

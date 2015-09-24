@@ -11,5 +11,9 @@
         <li><a href="{{action('TagsController@index')}}">View Tags</a></li>
         <li><a href="{{action('UsersController@index')}}">View Users</a></li>
         <li><a href="{{action('DesignationController@create')}}">Create Designation</a></li>
+        <li><a href="{{action('SchoolController@create')}}">Create Schools</a></li>
+        <li><a href="{{action('SchoolController@index')}}">View Schools</a></li>
+        <li><a href="{{action('DepartmentController@create')}}">Create Department</a></li>
+        <li><a href="{{action('DesignationController@assign')}}">Assign Designations</a></li>
     </ul>
 @endsection

@@ -1,0 +1,21 @@
+<?php $__env->startSection('content'); ?>
+    <h1>Departments</h1>
+    <hr>
+    <?php foreach($schools as $school): ?>
+        <article>
+            <h3><?php echo e($school->school_name); ?></h3>
+            <?php foreach($departments as $department): ?>
+                <?php if($department->schools_id==$school->id): ?>
+                    <article>
+                        <?php echo e($department->department_name); ?>
+
+                        <br>
+                    </article>
+                <?php endif; ?>
+            <?php endforeach; ?>
+            <br>
+        </article>
+    <?php endforeach; ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

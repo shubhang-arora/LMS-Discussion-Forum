@@ -62,9 +62,20 @@ Route::get('admin/create/tags','TagsController@create');
 Route::get('admin/users','UsersController@index');
 Route::get('admin/create/designation','DesignationController@create');
 Route::post('admin/create/designation','DesignationController@store');
+Route::get('admin/create/school','SchoolController@create');
+Route::post('admin/create/school','SchoolController@store');
+Route::get('admin/create/department','DepartmentController@create');
+Route::post('admin/create/department','DepartmentController@store');
+Route::get('admin/assign/designation','DesignationController@assign');
 
 //Designation route...
 Route::resource('designation','DesignationController',
     ['only'   => ['index', 'show']]);
 
+//School route...
+Route::resource('school','SchoolController',
+    ['only' => ['index', 'show']]);
 
+//Department route...
+Route::resource('department','DepartmentController',
+    ['only' =>  ['index', 'show']]);

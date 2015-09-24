@@ -1,0 +1,7 @@
+<?php $__env->startSection('content'); ?>
+    <h1><?php echo e($course->course_name); ?></h1>
+    <hr>
+    <h4>Edit Course</h4>
+    <h4>Assign Instructor</h4>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

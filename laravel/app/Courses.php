@@ -33,8 +33,8 @@ class Courses extends Model
         return $this->hasMany('App\Tags');
     }
 
-    public function designations()
+    public function department()
     {
-        return $this->hasMany('App\Designations');
+        return $this->belongsTo('App\Departments');
     }
 }
