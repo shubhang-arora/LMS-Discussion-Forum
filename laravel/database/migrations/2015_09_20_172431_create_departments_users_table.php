@@ -13,7 +13,6 @@ class CreateDepartmentsUsersTable extends Migration
     public function up()
     {
         Schema::create('departments_users', function (Blueprint $table) {
-            $table->increments('id');
             $table->integer('departments_id')->unsigned();
             $table->integer('users_id')->unsigned();
             $table->timestamps();

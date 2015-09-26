@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LMS-DISCUSSION-FORUM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css"  />
     <link rel="stylesheet" href="{{asset('includes/css/summernote.css')}}" >
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
@@ -41,7 +42,6 @@
 
 <script>
     $('div.alert').not('_alert-important').delay(3000).slideUp(3000);
-
 </script>
 @yield('footer')
 </body>

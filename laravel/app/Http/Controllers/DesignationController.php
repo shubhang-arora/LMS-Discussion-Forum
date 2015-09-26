@@ -107,8 +107,8 @@ class DesignationController extends Controller
         return view('Designation.assign',compact('schools', 'departments', 'designations', 'users'));
     }
 
-    public function assigned()
+    public function assigned(Request $request)
     {
-
+        dd($request->all());
     }
 }

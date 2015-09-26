@@ -10,18 +10,7 @@
     <?php endif; ?>
     <a id="comment">Comment</a>
     <div class="writeComment">
-        <?php echo Form::open(); ?>
 
-        <div class="form-group">
-            <?php echo Form::text('comment',null,['class'=>'comment form-control']); ?>
-
-        </div>
-        <?php echo Form::close(); ?>
-
-        <div class="form-group">
-            <?php echo Form::submit("Post Comment",['class'=>'send-btn']); ?>
-
-        </div>
     </div>
 
 <?php $__env->stopSection(); ?>
