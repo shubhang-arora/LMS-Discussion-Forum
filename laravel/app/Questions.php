@@ -5,12 +5,14 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Lanz\Commentable\Commentable;
 use Conner\Likeable\LikeableTrait;
+use Shubhang\DisLikeable\DisLikeableTrait;
 
 class Questions extends Model
 {
 
     use Commentable;
     use LikeableTrait;
+    use DisLikeableTrait;
 
     protected $fillable = [
         'question',

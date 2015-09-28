@@ -3,10 +3,6 @@
     {!! Form::select('schools_id',$schools,null,['id'=>'school_id','class'=>'form-control'])!!}
 </div>
 <div class="form-group">
-    {!! Form::label('departments_id','Select Department:')!!}
-    {!! Form::select('departments_id',$departments,null,['id'=>'department_id','class'=>'form-control'])!!}
-</div>
-<div class="form-group">
     {!! Form::label('designation_id','Select Designation:')!!}
     {!! Form::select('designation_id',$designations,null,['id'=>'designation_id','class'=>'form-control'])!!}
 </div>

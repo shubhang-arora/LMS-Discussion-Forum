@@ -152,9 +152,9 @@ trait DisLikeableTrait {
 	 * Fetch the primary ID of the currently logged in user
 	 * @return number
 	 */
-	public function loggedInUserId()
+	/*public function loggedInUserId()
 	{
 		return \Auth::id();
-	}
+	}*/
 	
 }

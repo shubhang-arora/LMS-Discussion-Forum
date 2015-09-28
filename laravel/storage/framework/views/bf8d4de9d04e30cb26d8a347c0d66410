@@ -5,12 +5,6 @@
 
 </div>
 <div class="form-group">
-    <?php echo Form::label('departments_id','Select Department:'); ?>
-
-    <?php echo Form::select('departments_id',$departments,null,['id'=>'department_id','class'=>'form-control']); ?>
-
-</div>
-<div class="form-group">
     <?php echo Form::label('designation_id','Select Designation:'); ?>
 
     <?php echo Form::select('designation_id',$designations,null,['id'=>'designation_id','class'=>'form-control']); ?>

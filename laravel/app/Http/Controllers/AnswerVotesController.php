@@ -17,6 +17,10 @@ class AnswerVotesController extends Controller
         if(!$answer->liked())
         {
             $answer->like();
+            if($answer->disliked())
+            {
+                $answer->undislike();
+            }
             echo $answer->likeCount." | Upvoted";
         }
         else
@@ -28,8 +32,24 @@ class AnswerVotesController extends Controller
 
     }
 
-    public function downVote()
+    public function downVote(Request $request)
     {
+        $id = $request->input('id');
 
+        $answer = Answers::findorfail($id);
+        if(!$answer->disliked())
+        {
+            $answer->dislike();
+            if($answer->liked())
+            {
+                $answer->unlike();
+            }
+            echo $answer->likeCount." | Upvoted";
+        }
+        else
+        {
+            $answer->undislike();
+            echo $answer->likeCount." | Upvote";
+        }
     }
 }

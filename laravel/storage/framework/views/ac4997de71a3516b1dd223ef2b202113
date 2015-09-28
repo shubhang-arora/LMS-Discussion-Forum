@@ -16,9 +16,14 @@
         <?php echo Form::open(); ?>
 
         <?php if($question->liked()): ?>
-            <button type="button" id="<?php echo e($question->id); ?>" class="vote-question"><?php echo e($question->likeCount); ?> | Upvoted</button>
+            <button type="button" id="<?php echo e($question->id); ?>" class="upvote-question"><?php echo e($question->likeCount); ?> | Upvoted</button>
         <?php else: ?>
-            <button type="button" id="<?php echo e($question->id); ?>" class="vote-question"><?php echo e($question->likeCount); ?> | Upvote</button>
+            <button type="button" id="<?php echo e($question->id); ?>" class="upvote-question"><?php echo e($question->likeCount); ?> | Upvote</button>
+        <?php endif; ?>
+        <?php if($question->disliked()): ?>
+            <button type="button" id="<?php echo e($question->id); ?>" class="downvote-question"><?php echo e($question->dislikeCount); ?> | DownVoted</button>
+        <?php else: ?>
+            <button type="button" id="<?php echo e($question->id); ?>" class="downvote-question"><?php echo e($question->dislikeCount); ?> | Downvote</button>
         <?php endif; ?>
         <?php echo Form::close(); ?>
 

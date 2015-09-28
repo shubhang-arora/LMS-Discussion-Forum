@@ -1,0 +1,28 @@
+<?php $__env->startSection('content'); ?>
+
+    <h1>Assign Head Of School</h1>
+    <hr>
+    <?php echo Form::open(); ?>
+
+    <div class="form-group">
+        <?php echo Form::label('schools_id','Select School:'); ?>
+
+        <?php echo Form::select('schools_id',$schools,null,['id'=>'schools_id','class'=>'form-control']); ?>
+
+    </div>
+
+    <div class="form-group">
+        <?php echo Form::label('users_id','Select User:'); ?>
+
+        <?php echo Form::select('users_id',$users,null,['id'=>'users_id','class'=>'form-control']); ?>
+
+    </div>
+
+    <div class="form-group">
+        <?php echo Form::submit('Assign',['class'=>'btn btn-primary form-control']); ?>
+
+    </div>
+    <?php echo Form::close(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

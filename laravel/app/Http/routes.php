@@ -51,9 +51,10 @@ Route::resource('tags','TagsController',
     ['except'   => ['create']]);
 
 //Vote route...
-
 Route::post('upvote/question','QuestionVotesController@upVote');
+Route::post('downvote/question','QuestionVotesController@downVote');
 Route::post('upvote/answer','AnswerVotesController@upVote');
+Route::post('downvote/answer','AnswerVotesController@downVote');
 
 //admin route...
 Route::get('admin','AdminController@index');

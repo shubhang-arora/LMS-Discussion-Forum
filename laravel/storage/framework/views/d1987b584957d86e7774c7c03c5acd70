@@ -10,18 +10,7 @@
 <hr>
     <a id="comment">Comment</a>
     <div class="writeComment">
-        <?php echo Form::open(); ?>
 
-        <div class="form-group">
-            <?php echo Form::text('comment',null,['class'=>'comment form-control']); ?>
-
-        </div>
-        <?php echo Form::close(); ?>
-
-        <div class="form-group">
-            <?php echo Form::submit("Post Comment",['class'=>'send-btn']); ?>
-
-        </div>
     </div>
 <hr>
 
@@ -34,9 +23,14 @@
                     <?php echo Form::open(); ?>
 
                     <?php if($answer->liked()): ?>
-                        <button type="button" id="<?php echo e($answer->id); ?>" class="vote-answer"><?php echo e($answer->likeCount); ?> | Upvoted</button>
+                        <button type="button" id="<?php echo e($answer->id); ?>" class="upvote-answer"><?php echo e($answer->likeCount); ?> | Upvoted</button>
                     <?php else: ?>
-                        <button type="button" id="<?php echo e($answer->id); ?>" class="vote-answer"><?php echo e($answer->likeCount); ?> | Upvote</button>
+                        <button type="button" id="<?php echo e($answer->id); ?>" class="upvote-answer"><?php echo e($answer->likeCount); ?> | Upvote</button>
+                    <?php endif; ?>
+                    <?php if($answer->disliked()): ?>
+                        <button type="button" id="<?php echo e($answer->id); ?>" class="downvote-answer"><?php echo e($answer->dislikeCount); ?> | Downvoted</button>
+                    <?php else: ?>
+                        <button type="button" id="<?php echo e($answer->id); ?>" class="downvote-answer"><?php echo e($answer->dislikeCount); ?> | Downvote</button>
                     <?php endif; ?>
                     <?php echo Form::close(); ?>
 

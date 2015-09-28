@@ -36,6 +36,8 @@
 <script src="{{asset('js/comments.js')}}"></script>
 <script src="{{asset('js/summernote.js')}}"></script>
 <script src="{{asset('js/upvote.js')}}"></script>
+<script src="{{asset('js/downvote.js')}}"></script>
+<script src="{{asset('js/assign.js')}}"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 <script src="{{asset('includes/js/summernote.min.js')}}"></script>

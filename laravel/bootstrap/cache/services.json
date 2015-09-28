@@ -29,7 +29,8 @@
         "App\\Providers\\RouteServiceProvider",
         "Lanz\\Commentable\\CommentableServiceProvider",
         "Laracasts\\Flash\\FlashServiceProvider",
-        "Conner\\Likeable\\LikeableServiceProvider"
+        "Conner\\Likeable\\LikeableServiceProvider",
+        "Shubhang\\DisLikeable\\DisLikeableServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -150,6 +151,9 @@
         "Illuminate\\Translation\\TranslationServiceProvider": [],
         "Illuminate\\Html\\HtmlServiceProvider": [],
         "Conner\\Likeable\\LikeableServiceProvider": [
+            "artisan.start"
+        ],
+        "Shubhang\\DisLikeable\\DisLikeableServiceProvider": [
             "artisan.start"
         ]
     }

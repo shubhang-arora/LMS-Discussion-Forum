@@ -15,7 +15,11 @@ class DisLikeableServiceProvider extends ServiceProvider {
 		]);
 	}
 	
-	public function register() {}
+	public function register() {
+		$this->app->bind('DisLikeable', function($app){
+			return new DisLikeable;
+		});
+	}
 
 	public function when() {
 		return array('artisan.start');

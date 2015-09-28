@@ -1,7 +1,7 @@
 /**
  * Created by Shubhang on 09-09-2015.
  */
-$(".vote-question").click(function()
+$(".upvote-question").click(function()
 {   var qid = $(this).attr("id");
     $.ajax({
         url : '/upvote/question',
@@ -16,7 +16,7 @@ $(".vote-question").click(function()
 /**
  * Created by Shubhang on 09-09-2015.
  */
-$(".vote-answer").click(function()
+$(".upvote-answer").click(function()
 {   var aid = $(this).attr("id");
     $.ajax({
         url : '/upvote/answer',

@@ -4,9 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Conner\Likeable\LikeableTrait;
+use Shubhang\DisLikeable\DisLikeableTrait;
 class Answers extends Model
 {
     use LikeableTrait;
+    use DisLikeableTrait;
 
     protected $fillable = [
        'answer',

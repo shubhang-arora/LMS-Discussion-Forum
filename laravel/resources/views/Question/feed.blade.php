@@ -17,9 +17,14 @@
         <br>
         {!! Form::open() !!}
         @if($question->liked())
-            <button type="button" id="{{$question->id}}" class="vote-question">{{$question->likeCount}} | Upvoted</button>
+            <button type="button" id="{{$question->id}}" class="upvote-question">{{$question->likeCount}} | Upvoted</button>
         @else
-            <button type="button" id="{{$question->id}}" class="vote-question">{{$question->likeCount}} | Upvote</button>
+            <button type="button" id="{{$question->id}}" class="upvote-question">{{$question->likeCount}} | Upvote</button>
+        @endif
+        @if($question->disliked())
+            <button type="button" id="{{$question->id}}" class="downvote-question">{{$question->dislikeCount}} | DownVoted</button>
+        @else
+            <button type="button" id="{{$question->id}}" class="downvote-question">{{$question->dislikeCount}} | Downvote</button>
         @endif
         {!! Form::close() !!}
         <hr>
