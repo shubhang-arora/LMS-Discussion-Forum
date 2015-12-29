@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Questions;
 
 class isOwnerOfQuestion
 {
@@ -21,7 +22,7 @@ class isOwnerOfQuestion
         $uriExpanded=explode('/',$uri);
         $id=$uriExpanded[1];
         $userId=Auth::user()->id;
-        $question = DB::table('questions')->where('id','=' ,$id)->first();
+        $question = Questions::findBySlugOrFail($id);
         if($userId!=$question->user_id){
             flash('You Are Not The Owner Of the Question')->important();
             return redirect($uriExpanded[0].'/'.$uriExpanded[1]);

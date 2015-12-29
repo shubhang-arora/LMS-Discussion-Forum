@@ -59,8 +59,8 @@ class QuestionsController extends Controller
 
         $question = Questions::where('question',$request->input('question'))->get();
         $count = Questions::where('question',$request->input('question'))->count();
-
-        return redirect(action('QuestionsController@show',$question[$count-1]->slug))->with('status','Your Question has been posted');
+        flash('Your Question Has Been Posted');
+        return redirect(action('QuestionsController@show',$question[$count-1]->slug));
     }
 
     /**
@@ -94,7 +94,7 @@ class QuestionsController extends Controller
     public function edit($id)
     {
 
-        $question     =       Questions::findorfail($id);
+        $question     =       Questions::findBySlugOrFail($id);
 
         $tags           =       Tags::lists('name','name')->toArray();
 
@@ -112,7 +112,7 @@ class QuestionsController extends Controller
     public function update($id,QuestionRequest $request)
     {
 
-        $questions = Questions::findorfail($id);
+        $questions = Questions::findBySlugOrFail($id);
         $questions->update([
             'courses_id'    =>      $request->input('courses_id'),
             'question'      =>      $request->input('question'),
@@ -120,7 +120,8 @@ class QuestionsController extends Controller
         ]);
 
         $this->syncTags($questions, $request->input('tag_list'),$request->input('courses_id'));
-        return redirect('/');
+        flash('Your Question Has Been Posted');
+        return redirect(action('QuestionsController@show',$questions->slug));
     }
 
     /**

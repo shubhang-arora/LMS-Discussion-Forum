@@ -1,4 +1,5 @@
 <?php $__env->startSection('content'); ?>
+
 <h1><?php echo e($question->question); ?></h1>
 <h3><?php echo $question->description; ?></h3>
 <?php if(\Illuminate\Support\Facades\DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->count()==1): ?>

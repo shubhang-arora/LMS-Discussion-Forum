@@ -7,7 +7,7 @@
     <hr/>
 
 
-    {!! Form::model($question,['method' => 'PATCH', 'action' => ['QuestionsController@update', $question->id]]) !!}
+    {!! Form::model($question,['method' => 'PATCH', 'action' => ['QuestionsController@update', $question->slug]]) !!}
     @include('Question._form',['SubmitButtonText'=>'Edit Question'])
     {!! Form::close() !!}
     @include('errors.list')
