@@ -57,7 +57,6 @@ class QuestionsAnswersController extends Controller
         $uri = $request->path();
         $uriExpanded=explode('/',$uri);
         $question_id=$uriExpanded[1];
-
         $answer = Auth::user()->answers()->create([
             'answer'       =>      $request->input('answer'),
             'questions_id'   =>      $question_id
@@ -139,7 +138,7 @@ class QuestionsAnswersController extends Controller
      */
     public function write($id)
     {
-        $question = Questions::findorfail($id);
+        $question = Questions::findBySlugOrFail($id);
         return view('Answer.write',compact('question'));
     }
 }

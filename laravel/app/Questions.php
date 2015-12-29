@@ -6,13 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 use Lanz\Commentable\Commentable;
 use Conner\Likeable\LikeableTrait;
 use Shubhang\DisLikeable\DisLikeableTrait;
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Questions extends Model
+class Questions extends Model implements SluggableInterface
 {
 
     use Commentable;
     use LikeableTrait;
     use DisLikeableTrait;
+    use SluggableTrait;
 
     protected $fillable = [
         'question',
@@ -21,6 +24,11 @@ class Questions extends Model
         'description'
     ];
 
+
+    protected $sluggable = [
+        'build_from' => 'question',
+        'save_to'    => 'slug',
+    ];
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

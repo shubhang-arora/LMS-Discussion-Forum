@@ -30,7 +30,8 @@
         "Lanz\\Commentable\\CommentableServiceProvider",
         "Laracasts\\Flash\\FlashServiceProvider",
         "Conner\\Likeable\\LikeableServiceProvider",
-        "Shubhang\\DisLikeable\\DisLikeableServiceProvider"
+        "Shubhang\\DisLikeable\\DisLikeableServiceProvider",
+        "Cviebrock\\EloquentSluggable\\SluggableServiceProvider"
     ],
     "eager": [
         "Illuminate\\Auth\\AuthServiceProvider",
@@ -48,7 +49,8 @@
         "App\\Providers\\EventServiceProvider",
         "App\\Providers\\RouteServiceProvider",
         "Lanz\\Commentable\\CommentableServiceProvider",
-        "Laracasts\\Flash\\FlashServiceProvider"
+        "Laracasts\\Flash\\FlashServiceProvider",
+        "Cviebrock\\EloquentSluggable\\SluggableServiceProvider"
     ],
     "deferred": {
         "command.app.name": "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",

@@ -149,6 +149,7 @@ return [
         Laracasts\Flash\FlashServiceProvider::class,
         Conner\Likeable\LikeableServiceProvider::class,
         Shubhang\DisLikeable\DisLikeableServiceProvider::class,
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
     ],
 
     /*

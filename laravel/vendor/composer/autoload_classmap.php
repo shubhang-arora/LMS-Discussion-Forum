@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AddCourseIdToTagsTable' => $baseDir . '/database/migrations/2015_08_09_113733_add_course_id_to_tags_table.php',
     'AddDepartmentsIdToCoursesTable' => $baseDir . '/database/migrations/2015_09_20_162835_add_departments_id_to_courses_table.php',
+    'AddSlugColumnToQuestionsTable' => $baseDir . '/database/migrations/2015_12_30_004147_add_slug_column_to_questions_table.php',
     'AddUserIdToTagsTable' => $baseDir . '/database/migrations/2015_08_14_105652_add_user_id_to_tags_table.php',
     'CreateAdminTable' => $baseDir . '/database/migrations/2015_08_31_101745_create_admin_table.php',
     'CreateAnswerCommentsTable' => $baseDir . '/database/migrations/2015_08_07_113337_create_answerComments_table.php',
@@ -18,6 +19,7 @@ return array(
     'CreateDepartmentsTable' => $baseDir . '/database/migrations/2015_09_20_153913_create_departments_table.php',
     'CreateDepartmentsUsersTable' => $baseDir . '/database/migrations/2015_09_20_172431_create_departments_users_table.php',
     'CreateDesignationsTable' => $baseDir . '/database/migrations/2015_09_14_200857_create_designations_table.php',
+    'CreateDisLikeableTables' => $baseDir . '/database/migrations/2015_09_10_065447_create_dislikeable_tables.php',
     'CreateLikeableTables' => $baseDir . '/database/migrations/2014_09_10_065447_create_likeable_tables.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateQuestionCommentsTable' => $baseDir . '/database/migrations/2015_08_07_113502_create_questionComments_table.php',

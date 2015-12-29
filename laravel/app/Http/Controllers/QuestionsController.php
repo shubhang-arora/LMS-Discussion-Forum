@@ -29,6 +29,7 @@ class QuestionsController extends Controller
     public function index()
     {
         $questions = Questions::latest('updated_at')->orderBy('id', 'desc')->get();
+
         return view('Question.feed',compact('questions'));
 
     }
@@ -56,9 +57,10 @@ class QuestionsController extends Controller
 
         $this->askQuestion($request);
 
-        flash('Your Question Has Been Posted');
+        $question = Questions::where('question',$request->input('question'))->get();
+        $count = Questions::where('question',$request->input('question'))->count();
 
-        return redirect('/');
+        return redirect(action('QuestionsController@show',$question[$count-1]->slug))->with('status','Your Question has been posted');
     }
 
     /**
@@ -69,7 +71,7 @@ class QuestionsController extends Controller
      */
     public function show($id)
     {
-        $question = Questions::findorfail($id);
+        $question = Questions::findBySlugOrFail($id);
         $answers = $question->answers;
         $user_answer = DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->get();
         if($user_answer==NULL)

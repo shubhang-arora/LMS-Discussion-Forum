@@ -11,7 +11,7 @@
         "lanz/laravel-commentable": "~2.0",
         "laracasts/flash": "^1.3",
         "rtconner/laravel-likeable": "~1.0.7",
-        "shubhang-arora/laravel-dislikeable": "~1"
+        "cviebrock/eloquent-sluggable": "^3.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fc749a3-94ef-447c-b299-843fd2fe35f9" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\07a82db80db8542d1195b468f245e0df5cdbcb82" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\12a4060d54712161b06cea5a5df43ac0b16a1302" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\12dc2e89ed5c704674947efdfdd3edf2879c6702" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\22584ed28ca0d01a0f942f409faaab3eb245e56c" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\2358d31ca2cdc973d74a3ffdf901c01a7b520fff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\51b9c74f8ad0f349d77dba2fa385ca00538c4164" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\b33a1284c217900a1553e6bf35f9af598402737d" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\series\firstfile\LMS-DISCUSSION-FORUM\laravel\storage\framework\sessions\f442a22d237b86c789ce2eef9b7b17de035d28e6" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/566ddd533ddb34e0753fb2ecaf0ee272" afterPath="$PROJECT_DIR$/storage/framework/views/566ddd533ddb34e0753fb2ecaf0ee272" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_08_07_113058_create_questions_table.php" afterPath="$PROJECT_DIR$/database/migrations/2015_08_07_113058_create_questions_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Questions.php" afterPath="$PROJECT_DIR$/app/Questions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/ac4997de71a3516b1dd223ef2b202113" afterPath="$PROJECT_DIR$/storage/framework/views/ac4997de71a3516b1dd223ef2b202113" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/c3/68/c368413004712d5af951d3ed53de695c" afterPath="$PROJECT_DIR$/storage/framework/cache/c3/68/c368413004712d5af951d3ed53de695c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/d1987b584957d86e7774c7c03c5acd70" afterPath="$PROJECT_DIR$/storage/framework/views/d1987b584957d86e7774c7c03c5acd70" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Question/feed.blade.php" afterPath="$PROJECT_DIR$/resources/views/Question/feed.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/cache/services.json" afterPath="$PROJECT_DIR$/bootstrap/cache/services.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Question/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.iws" />
@@ -40,31 +47,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="downvote.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/downvote.js">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnswerVotesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnswerVotesController.php">
+      <file leaf-file-name="QuestionsAnswersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state vertical-scroll-proportion="-8.384615">
+              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Answers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Answers.php">
+      <file leaf-file-name="QuestionCommentsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionCommentsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="149" column="18" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Questions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Questions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding>
                 <element signature="e#23#62#0#PHP" expanded="true" />
               </folding>
@@ -72,71 +109,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
+      <file leaf-file-name="2015_08_07_113058_create_questions_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_113058_create_questions_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="123" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <file leaf-file-name="2015_12_30_004147_add_slug_column_to_questions_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_30_004147_add_slug_column_to_questions_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4795222">
-              <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistersUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.192307">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feed.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="feed.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Question/feed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.38931298">
+              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -162,10 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2015_09_20_152257_create_departments_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_09_20_153913_create_departments_table.php" />
-        <option value="$PROJECT_DIR$/app/Designations.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/School/cretae.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/DesignationRequest.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_09_20_145159_create_schools_table.php" />
@@ -197,22 +200,26 @@
         <option value="$PROJECT_DIR$/public/js/assign.js" />
         <option value="$PROJECT_DIR$/vendor/rtconner/laravel-likeable/src/LikeableServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Providers/DislikeableServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Questions.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/shubhang-arora/laravel-dislikeable/src/DisLikeableServiceProvider.php" />
         <option value="$PROJECT_DIR$/vendor/shubhang-arora/laravel-dislikeable/src/DisLikeableTrait.php" />
         <option value="$PROJECT_DIR$/vendor/symfony/console/Question/Question.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionVotesController.php" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/public/js/upvote.js" />
-        <option value="$PROJECT_DIR$/resources/views/Question/feed.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/public/js/downvote.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AnswerVotesController.php" />
         <option value="$PROJECT_DIR$/app/Answers.php" />
-        <option value="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Questions.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_08_07_113058_create_questions_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_12_30_004147_add_slug_column_to_questions_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/Question/feed.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Question/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" />
       </list>
     </option>
   </component>
@@ -235,8 +242,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
-    <option name="height" value="772" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -399,7 +406,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/series/firstfile/LMS-DISCUSSION-FORUM/laravel/resources/views/Answer/write.blade.php&#10;gitignore&#9;FILE&#9;file://C:/xampp/htdocs/series/firstfile/LMS-Discussion_Forum/laravel/database/.gitignore" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test-laravel-5-project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../winForAll" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="162" />
@@ -516,7 +523,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442242937879</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Small Change">
+      <created>1450682108846</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1450682108846</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -529,18 +542,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="772" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28517398" sideWeight="0.07728706" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34580153" sideWeight="0.6399371" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18532526" sideWeight="0.6399371" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3144654" sideWeight="0.50293684" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32389936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2489019" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3015625" sideWeight="0.49706313" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11349693" sideWeight="0.49706313" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19692533" sideWeight="0.3600629" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -573,7 +586,8 @@
     <MESSAGE value="Initiated Likeable" />
     <MESSAGE value="View Profile" />
     <MESSAGE value="Started Working on Designations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started Working on Designations" />
+    <MESSAGE value="Small Change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -582,41 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_20_162835_add_departments_id_to_courses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CourseRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.115385">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Course/_form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CoursesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Course/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Question/tagQuestions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -736,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.309092">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../shubhang-arora/laravel-dislikeable/src/DisLikeableServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -764,24 +736,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="150" column="63" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/shubhang-arora/laravel-dislikeable/src/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5849057">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -834,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Questions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionVotesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -866,18 +817,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Question/feed.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/js/downvote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnswerVotesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Answers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -889,68 +883,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/downvote.js">
+    <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnswerVotesController.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <caret line="149" column="18" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Answers.php">
+    <entry file="file://$PROJECT_DIR$/app/Questions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding>
             <element signature="e#23#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_113058_create_questions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="123" selection-start-line="33" selection-start-column="123" selection-end-line="33" selection-end-column="123" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_12_30_004147_add_slug_column_to_questions_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionCommentsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.192307">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/Question/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4795222">
-          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="22" column="86" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsAnswersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.384615">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Question/feed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38931298">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
           <folding />
         </state>
       </provider>

@@ -10,7 +10,7 @@
 <hr/>
 @foreach($questions as $question)
     <article>
-        <h2><a href={{action('QuestionsController@show',$question->id)}}>{{$question->question}}</a></h2>
+        <h2><a href={{action('QuestionsController@show',$question->slug)}}>{{$question->question}}</a></h2>
         <div class="body">{!!$question->description!!}</div>
         <div class="footer">{{$question->created_at->diffForHumans()}}</div>
         {{$question->answers->count()}} Response

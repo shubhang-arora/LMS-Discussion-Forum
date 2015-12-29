@@ -4,9 +4,9 @@
 <h1>{{$question->question}}</h1>
 <h3>{!!$question->description!!}</h3>
 @if(\Illuminate\Support\Facades\DB::table('answers')->where('user_id',Auth::user()->id)->where('questions_id',$question->id)->count()==1)
-    <a href="{{action('QuestionsAnswersController@edit',[$question->id,$aid])}}">Edit Your Answer</a>
+    <a href="{{action('QuestionsAnswersController@edit',[$question->slug,$aid])}}">Edit Your Answer</a>
 @else
-    <a href="{{action('QuestionsAnswersController@write',$question->id)}}">Write Answer</a>
+    <a href="{{action('QuestionsAnswersController@write',$question->slug)}}">Write Answer</a>
 @endif
 
 <hr>
