@@ -6,7 +6,7 @@
 
     <h4><?php echo $answer->answer; ?></h4>
     <?php if($aid!=-1): ?>
-        <a href="<?php echo e(action('QuestionsAnswersController@edit',[$question->id,$aid])); ?>">Edit</a>
+        <a href="<?php echo e(action('QuestionsAnswersController@edit',[$question->slug,$answer->slug])); ?>">Edit</a>
     <?php endif; ?>
     <a id="comment">Comment</a>
     <div class="writeComment">

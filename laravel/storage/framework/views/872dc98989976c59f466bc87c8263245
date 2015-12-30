@@ -3,7 +3,7 @@
     <h1>Edit Answer</h1>
     <hr/>
     <h1><?php echo e($question->question); ?></h1>
-    <?php echo Form::model($answer,['method' => 'PATCH','action' => ['QuestionsAnswersController@update',$question->id,$answer->id]]); ?>
+    <?php echo Form::model($answer,['method' => 'PATCH','action' => ['QuestionsAnswersController@update',$question->slug,$answer->slug]]); ?>
 
     <?php echo $__env->make('Answer._form',['SubmitButtonText'=>'Edit Answer'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo Form::close(); ?>

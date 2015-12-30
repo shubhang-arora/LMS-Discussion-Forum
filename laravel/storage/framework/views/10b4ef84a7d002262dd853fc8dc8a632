@@ -4,7 +4,7 @@
 <hr/>
 <h1><?php echo e($question->question); ?></h1>
 
-<?php echo Form::model($question,['action' => ['QuestionsAnswersController@store',$question->id]]); ?>
+<?php echo Form::model($question,['action' => ['QuestionsAnswersController@store',$question->slug]]); ?>
 
 <?php echo $__env->make('Answer._form',['SubmitButtonText'=>'Submit Answer'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php echo Form::close(); ?>

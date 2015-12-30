@@ -57,13 +57,14 @@ class QuestionsAnswersController extends Controller
         $uri = $request->path();
         $uriExpanded=explode('/',$uri);
         $question_id=$uriExpanded[1];
+        $question = Questions::findBySlugOrFail($question_id);
         $answer = Auth::user()->answers()->create([
             'answer'       =>      $request->input('answer'),
-            'questions_id'   =>      $question_id
+            'questions_id'   =>      $question->id
         ]);
 
         flash('Your Answer Has been Posted');
-        return redirect(action('QuestionsController@index'));
+        return redirect(action('QuestionsAnswersController@show',[$question_id,$answer->id]));
 
     }
 
@@ -74,9 +75,11 @@ class QuestionsAnswersController extends Controller
      */
     public function show($qid,$aid)
     {
-        $answer = Answers::findorfail($aid);
-        $question = Questions::findorfail($qid);
-        $user_answer = DB::table('answers')->where('user_id',Auth::user()->id)->where('id',$aid)->get();
+
+        $answer = Answers::findBySlugOrFail($aid);
+        $question = Questions::findBySlugOrFail($qid);
+
+        $user_answer = DB::table('answers')->where('user_id',Auth::user()->id)->where('slug',$aid)->get();
 
         if($user_answer==NULL)
         {
@@ -100,8 +103,8 @@ class QuestionsAnswersController extends Controller
     public function edit($qid,$aid)
     {
 
-        $question= Questions::findorfail($qid);
-        $answer = Answers::findorfail($aid);
+        $question= Questions::findBySlugOrFail($qid);
+        $answer = Answers::findBySlugOrFail($aid);
         return view('Answer.edit',compact(['question','answer']));
 
     }
@@ -115,9 +118,10 @@ class QuestionsAnswersController extends Controller
      */
     public function update(QuestionAnswerRequest $request, $qid,$aid)
     {
-        $answer = Answers::findorfail($aid);
+        $answer = Answers::findBySlugOrFail($aid);
         $answer->update($request->all());
-        return redirect(action('QuestionsController@index'));
+        flash('Your Answer Has been Edited');
+        return redirect(action('QuestionsAnswersController@show',[$qid,$answer->slug]));
     }
 
     /**

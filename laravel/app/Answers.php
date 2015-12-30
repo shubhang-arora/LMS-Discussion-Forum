@@ -5,14 +5,24 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Conner\Likeable\LikeableTrait;
 use Shubhang\DisLikeable\DisLikeableTrait;
-class Answers extends Model
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
+
+class Answers extends Model implements SluggableInterface
 {
     use LikeableTrait;
     use DisLikeableTrait;
+    use SluggableTrait;
 
     protected $fillable = [
        'answer',
         'questions_id'
+    ];
+
+
+    protected $sluggable = [
+        'build_from' => 'answer',
+        'save_to'    => 'slug',
     ];
 
     /**

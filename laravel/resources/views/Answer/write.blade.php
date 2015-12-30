@@ -6,7 +6,7 @@
 <hr/>
 <h1>{{$question->question}}</h1>
 
-{!! Form::model($question,['action' => ['QuestionsAnswersController@store',$question->id]]) !!}
+{!! Form::model($question,['action' => ['QuestionsAnswersController@store',$question->slug]]) !!}
 @include('Answer._form',['SubmitButtonText'=>'Submit Answer'])
 {!! Form::close() !!}
 @include('errors.list')

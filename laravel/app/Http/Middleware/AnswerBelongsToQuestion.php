@@ -20,10 +20,11 @@ class AnswerBelongsToQuestion
         $uri = $request->path();
         $UriExpanded=explode('/',$uri);
         $q_id=$UriExpanded[1];
+        $question = Questions::findBySlugOrFail($q_id);
         $a_id = $UriExpanded[3];
-        $answer = Answers::findOrfail($a_id);
+        $answer = Answers::findBySlugOrFail($a_id);
         $id = $answer->questions_id;
-        if($id!=$q_id)
+        if($id!=$question->id)
         {
             return redirect(action('QuestionsController@index'));
         }

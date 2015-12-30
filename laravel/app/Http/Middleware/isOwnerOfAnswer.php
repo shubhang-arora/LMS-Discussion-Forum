@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Answers;
 
 class isOwnerOfAnswer
 {
@@ -22,7 +23,7 @@ class isOwnerOfAnswer
         $uriExpanded=explode('/',$uri);
         $id=$uriExpanded[3];
         $userId=Auth::user()->id;
-        $answer = DB::table('answers')->where('id','=' ,$id)->first();
+        $answer = Answers::findBySlugOrFail($id);
 
         if($userId!=$answer->user_id){
             flash('You Are Not The Owner Of the Answer')->important();

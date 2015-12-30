@@ -19,7 +19,7 @@
 
             <article>
                     <?php foreach($answers as $answer): ?>
-                    <a href="<?php echo e(action('QuestionsAnswersController@show',[$question->id,$answer->id])); ?>"><?php echo $answer->answer; ?></a>
+                    <a href="<?php echo e(action('QuestionsAnswersController@show',[$question->slug,$answer->slug])); ?>"><?php echo $answer->answer; ?></a>
                         <br>
                     <?php echo Form::open(); ?>
 

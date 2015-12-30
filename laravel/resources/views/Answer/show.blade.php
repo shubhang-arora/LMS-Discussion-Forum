@@ -8,7 +8,7 @@
 
     <h4>{!!$answer->answer!!}</h4>
     @if($aid!=-1)
-        <a href="{{action('QuestionsAnswersController@edit',[$question->id,$aid])}}">Edit</a>
+        <a href="{{action('QuestionsAnswersController@edit',[$question->slug,$answer->slug])}}">Edit</a>
     @endif
     <a id="comment">Comment</a>
     <div class="writeComment">

@@ -21,7 +21,7 @@
 
             <article>
                     @foreach($answers as $answer)
-                    <a href="{{action('QuestionsAnswersController@show',[$question->id,$answer->id])}}">{!!$answer->answer!!}</a>
+                    <a href="{{action('QuestionsAnswersController@show',[$question->slug,$answer->slug])}}">{!!$answer->answer!!}</a>
                         <br>
                     {!! Form::open() !!}
                     @if($answer->liked())
